@@ -661,7 +661,7 @@
                         <div><i class="fa-regular fa-circle-check"></i> Earthquake Resistant</div>
                         <div><i class="fa-regular fa-circle-check"></i> Corrosion Resistant</div>
                     </div>
-                    <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <!-- <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button> -->
                 </div>
             </div>
 
@@ -677,7 +677,7 @@
                         <div><i class="fa-regular fa-circle-check"></i> High Load Bearing Capacity</div>
                         <div><i class="fa-regular fa-circle-check"></i> Precision Manufactured</div>
                     </div>
-                    <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <!-- <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button> -->
                 </div>
             </div>
 
@@ -693,7 +693,7 @@
                         <div><i class="fa-regular fa-circle-check"></i> High Durability</div>
                         <div><i class="fa-regular fa-circle-check"></i> Precision & Strength</div>
                     </div>
-                    <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <!-- <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button> -->
                 </div>
             </div>
 
@@ -709,7 +709,7 @@
                         <div><i class="fa-regular fa-circle-check"></i> GI Sheets / GP Sheets</div>
                         <div><i class="fa-regular fa-circle-check"></i> Custom Sizes Available</div>
                     </div>
-                    <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <!-- <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button> -->
                 </div>
             </div>
 
@@ -725,7 +725,7 @@
                         <div><i class="fa-regular fa-circle-check"></i> High Corrosion Resistance</div>
                         <div><i class="fa-regular fa-circle-check"></i> Multiple Profiles & Colors</div>
                     </div>
-                    <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <!-- <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button> -->
                 </div>
             </div>
 
@@ -741,7 +741,7 @@
                         <div><i class="fa-regular fa-circle-check"></i> Timely Delivery</div>
                         <div><i class="fa-regular fa-circle-check"></i> Complete Steel Solutions</div>
                     </div>
-                    <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <!-- <button class="enquire-btn">ENQUIRE NOW <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button> -->
                 </div>
             </div>
         </div>

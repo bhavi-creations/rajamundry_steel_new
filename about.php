@@ -117,7 +117,8 @@
       min-height: 610px;
       background:
         linear-gradient(90deg, rgba(2, 11, 19, .98) 0%, rgba(2, 11, 19, .8) 42%, rgba(2, 11, 19, .25) 100%),
-        url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop");
+        url("./assets/img/7.png");
+        /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop"); */
       /* CHANGE THIS IMAGE: hero industrial background with R logo */
       background-size: cover;
       background-position: center;
@@ -564,7 +565,7 @@
           <li><a class="nav-link" href="yards.php">YARDS</a></li>
 
           <li><a class="nav-link" href="contact.php">CONTACT</a></li>
-          <a></a>
+          <a href="get_a_qoute.php">
           <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
         </ul>
       </div>

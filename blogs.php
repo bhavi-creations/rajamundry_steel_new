@@ -829,9 +829,9 @@
                 </div>
             </div>
 
-            <button class="btn-gold">
-                GET A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i>
-            </button>
+            <a href="get_a_qoute.php"> <button class="btn-gold">
+                    GET A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i>
+                </button></a>
         </section>
     </section>
 

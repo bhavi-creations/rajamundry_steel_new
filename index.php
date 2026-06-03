@@ -113,7 +113,8 @@
             min-height: 720px;
             background:
                 linear-gradient(90deg, rgba(2, 11, 19, .98) 0%, rgba(2, 11, 19, .85) 42%, rgba(2, 11, 19, .35) 100%),
-                url("https://images.unsplash.com/photo-1581093458791-9d15482442f6?q=80&w=1600&auto=format&fit=crop");
+                url("./assets/img/rajahmundry.png");
+                /* url("https://images.unsplash.com/photo-1581093458791-9d15482442f6?q=80&w=1600&auto=format&fit=crop"); */
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -152,6 +153,7 @@
             font-size: 12px;
             font-weight: 700;
             color: #fff;
+            margin: 10px;
         }
 
         .feature span {
@@ -211,7 +213,8 @@
         .about-img {
             min-height: 360px;
             border: 1px solid var(--gold);
-            background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop");
+            background: url("./assets/img/Gajuwaka.png");
+            /* background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"); */
             background-size: cover;
             background-position: center;
         }
@@ -261,7 +264,8 @@
             padding: 70px 0;
             background:
                 linear-gradient(90deg, rgba(2, 11, 19, .98), rgba(2, 11, 19, .75)),
-                url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1600&auto=format&fit=crop");
+                url("./assets/img/gallrey_3.png");
+                /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1600&auto=format&fit=crop"); */
             background-size: cover;
             color: #fff;
         }
@@ -432,12 +436,23 @@
                 <button class="btn-outline-gold">EXPLORE PRODUCTS</button>
             </div>
 
-            <div class="features">
+            <div class="features ">
+
                 <div class="feature"><span>◇</span>DIRECT VENDOR<br>NETWORK</div>
+
                 <div class="feature"><span>✥</span>PREMIUM<br>QUALITY</div>
+
                 <div class="feature"><span>▦</span>BULK SUPPLY<br>SPECIALISTS</div>
+
                 <div class="feature"><span>▸</span>ON-TIME<br>DELIVERY</div>
+ 
+
+
+
+
+
             </div>
+        </div>
         </div>
     </section>
 
@@ -507,7 +522,7 @@
                     <p class="gold-text fw-bold">ABOUT US</p>
                     <h2>A LEGACY OF TRUST.<br>A FUTURE OF <span class="gold-text">STRENGTH.</span></h2>
                     <p>With decades of experience, Rajamundry Steels has become a trusted partner for construction, industrial and commercial projects. We are committed to delivering premium quality steel with reliability, transparency and timely service.</p>
-                   <a href="about.php"><button class="btn-outline-gold">KNOW MORE ABOUT US →</button></a> 
+                    <a href="about.php"><button class="btn-outline-gold">KNOW MORE ABOUT US →</button></a>
                 </div>
             </div>
         </div>
@@ -589,7 +604,7 @@
             </div>
 
             <div class="text-center mt-5">
-                <a href="products.php">  <button class="btn-gold">VIEW ALL PRODUCTS →</button></a>
+                <a href="products.php"> <button class="btn-gold">VIEW ALL PRODUCTS →</button></a>
             </div>
         </div>
     </section>
@@ -713,10 +728,10 @@
                     <p>Looking for reliable steel supply for your next project? We are here to provide the strength your project deserves.</p>
                 </div>
                 <div class="col-lg-3">
-                   <a href="get_a_qoute.php"> <button class="btn-gold mb-2">REQUEST A QUOTE →</button></a>
+                    <a href="get_a_qoute.php"> <button class="btn-gold mb-2">REQUEST A QUOTE →</button></a>
                     <!-- <button class="btn-outline-gold">CHAT ON WHATSAPP</button> -->
-                      <a href="https://wa.me/919053455789" target="_blank"> <button class="btn-outline-gold">CHAT ON WHATSAPP</button></a>
-                    
+                    <a href="https://wa.me/919053455789" target="_blank"> <button class="btn-outline-gold">CHAT ON WHATSAPP</button></a>
+
                 </div>
             </div>
         </div>

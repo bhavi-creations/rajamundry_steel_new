@@ -218,7 +218,7 @@
         .form-select {
             background: rgba(255, 255, 255, .03);
             border: 1px solid rgba(255, 255, 255, .28);
-            color: #fff;
+            color: #ffffff;
             height: 44px;
             font-size: 13px;
         }
@@ -228,7 +228,7 @@
         }
 
         .form-select {
-            color: #b9c4cf
+            color: #000000
         }
 
         textarea.form-control {
@@ -523,14 +523,17 @@
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li><a class="nav-link" href="#">HOME</a></li>
-                    <li><a class="nav-link" href="#">ABOUT US</a></li>
-                    <li><a class="nav-link" href="#">PRODUCTS</a></li>
-                    <li><a class="nav-link" href="#">VENDORS</a></li>
-                    <li><a class="nav-link" href="#">YARDS</a></li>
-                    <li><a class="nav-link" href="#">TRUSTED CLIENTS</a></li>
-                    <li><a class="nav-link" href="#">CONTACT US</a></li>
-                    <li><button class="btn-outline-gold ms-lg-4">GET A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button></li>
+                    <li><a class="nav-link active" href="index.php">HOME</a></li>
+                    <li><a class="nav-link" href="about.php">ABOUT US</a></li>
+                    <li><a class="nav-link" href="blogs.php">BLOGS</a></li>
+                    <li><a class="nav-link" href="Products.php">PRODUCTS</a></li>
+                    <li><a class="nav-link" href="Vendors.php">VENDORS</a></li>
+                    <li><a class="nav-link" href="yards.php">YARDS</a></li>
+
+                    <li><a class="nav-link" href="contact.php">CONTACT</a></li>
+                    <a href="get_a_qoute.php">
+                        <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -589,9 +592,9 @@
                                     <select class="form-select">
                                         <option>Select project location</option>
                                         <option>Rajahmundry</option>
-                                        <option>Vijayawada</option>
-                                        <option>Visakhapatnam</option>
-                                        <option>Hyderabad</option>
+                                        <option>Gannavaram</option>
+                                        <option>Gajuwaka</option>
+                                        <!-- <option>Hyderabad</option> -->
                                     </select>
                                 </div>
                                 <div class="col-md-6">
@@ -602,7 +605,9 @@
                                         <option>Structural Steel</option>
                                         <option>MS Pipes</option>
                                         <option>Steel Sheets</option>
-                                        <option>Roofing Sheets</option>
+                                        <option>Binding Wire & Accessories</option>
+
+                                        </option>Angles, Channels & Beam</option>
                                     </select>
                                 </div>
                                 <div class="col-md-4">
@@ -733,17 +738,30 @@
 
                 <div class="col-lg-2 offset-lg-1 footer-col">
                     <h6>QUICK LINKS</h6>
-                    <a href="#">Home</a><a href="#">About Us</a><a href="#">Products</a><a href="#">Vendors</a><a href="#">Yards</a><a href="#">Trusted Clients</a><a href="#">Contact Us</a>
+                    <a href="index.php">Home</a>
+                    <a href="about.php">About Us</a>
+                    <a href="products.php">Products</a>
+                    <a href="vendors.php">Vendors</a>
+                    <a href="blogs.php">Blogs</a>
+                    <a href="yards.php">Yards</a>
+                    <a href="contact.php">Contact</a>
                 </div>
 
                 <div class="col-lg-2 footer-col">
                     <h6>PRODUCTS</h6>
-                    <a href="#">TMT Bars</a><a href="#">Structural Steel</a><a href="#">MS Pipes</a><a href="#">Steel Sheets</a><a href="#">Roofing Sheets</a><a href="#">Industrial Steel Supply</a>
+                    <a href="Products.php">TMT Bars</a>
+                    <a href="Products.php">Structural Steel</a>
+                    <a href="Products.php">MS Pipes</a>
+                    <a href="Products.php">Steel Sheets</a>
+                    <a href="Products.php">Roofing Sheets</a>
                 </div>
 
                 <div class="col-lg-2 footer-col">
                     <h6>VENDORS</h6>
-                    <a href="#">JSW Steel</a><a href="#">Tata Steel</a><a href="#">Vizag Steel</a><a href="#">BondX Steel</a>
+                    <a href="Vendors.php">JSW Steel</a>
+                    <a href="Vendors.php">Tata Steel</a>
+                    <a href="Vendors.php">Vizag Steel</a>
+                    <a href="Vendors.php">BondX</a>
                 </div>
 
                 <div class="col-lg-2 footer-col">

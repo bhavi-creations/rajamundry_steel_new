@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rajamundry Steels - Yards</title>
-<link rel="icon" type="image/png" href="./assets/style.css">
+    <link rel="icon" type="image/png" href="./assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
@@ -199,7 +199,7 @@
         }
 
         .hero-stats {
-            margin-top: -90px;
+            margin-top: -50px;
             position: relative;
             z-index: 3;
             padding: 0 50px 20px;
@@ -269,7 +269,7 @@
 
         .yard-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 22px;
         }
 
@@ -707,19 +707,16 @@
 
             <div class="collapse navbar-collapse" id="mainMenu">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li><a class="nav-link" href="#">HOME</a></li>
-                    <li><a class="nav-link" href="#">ABOUT US</a></li>
-                    <li><a class="nav-link" href="#">PRODUCTS</a></li>
-                    <li><a class="nav-link" href="#">VENDORS</a></li>
-                    <li><a class="nav-link active" href="#">YARDS</a></li>
-                    <li><a class="nav-link" href="#">INFRASTRUCTURE</a></li>
-                    <li><a class="nav-link" href="#">PROJECTS</a></li>
-                    <li><a class="nav-link" href="#">CONTACT</a></li>
-                    <li>
-                        <button class="btn-gold ms-lg-4">
-                            GET A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </button>
-                    </li>
+                    <li><a class="nav-link active" href="index.php">HOME</a></li>
+                    <li><a class="nav-link" href="about.php">ABOUT US</a></li>
+                    <li><a class="nav-link" href="blogs.php">BLOGS</a></li>
+                    <li><a class="nav-link" href="Products.php">PRODUCTS</a></li>
+                    <li><a class="nav-link" href="Vendors.php">VENDORS</a></li>
+                    <li><a class="nav-link" href="yards.php">YARDS</a></li>
+
+                    <li><a class="nav-link" href="contact.php">CONTACT</a></li>
+                    <a></a>
+                    <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
                 </ul>
             </div>
         </div>
@@ -768,7 +765,7 @@
             <div class="stat-item">
                 <i class="fa-regular fa-building"></i>
                 <div>
-                    <h3>4+</h3>
+                    <h3>3+</h3>
                     <p>YARDS / BRANCHES</p>
                 </div>
             </div>
@@ -807,7 +804,7 @@
 
         <div class="yard-grid">
             <div class="yard-card">
-                <div class="yard-img" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop')">
+                <div class="yard-img" style="background-image:url('./assets/img/rajahmundry.png')">
                     <div class="yard-num">01</div>
                 </div>
                 <div class="yard-title">
@@ -815,46 +812,46 @@
                     <span>RAJAHMUNDRY</span>
                 </div>
                 <div class="yard-info">
-                    <div class="yard-line"><i class="fa-solid fa-location-dot"></i><span>Door No: 12-15-3/1, Industrial Area,<br>Rajahmundry, Andhra Pradesh - 533101</span></div>
-                    <div class="yard-line"><i class="fa-solid fa-phone"></i><span>+91 91234 56789</span></div>
-                    <div class="yard-line"><i class="fa-regular fa-clock"></i><span>Mon - Sat : 8:00 AM - 7:00 PM</span></div>
-                    <button>VIEW LOCATION <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <div class="yard-line"><i class="fa-solid fa-location-dot"></i><span>Door No: Aditya Nagar, Rajamahendravaram, Andhra Pradesh 533107</span></div>
+                    <div class="yard-line"><i class="fa-solid fa-phone"></i><span>+91 96522 39999</span></div>
+                    <div class="yard-line"><i class="fa-regular fa-clock"></i><span>Mon - Sat : 9:00 AM - 8:00 PM <br> Sun : 9:00 AM - 2:00 PM </span></div>
+                    <a href="https://share.google/xI5r6Bfz4Qa6kZ2bq" target="_blank"> <button>VIEW LOCATION <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button></a>
                 </div>
             </div>
 
             <div class="yard-card">
-                <div class="yard-img" style="background-image:url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop')">
+                <div class="yard-img" style="background-image:url('./assets/img/Gajuwaka.png')">
                     <div class="yard-num">02</div>
                 </div>
                 <div class="yard-title">
                     <h3>VIJAYAWADA YARD</h3>
-                    <span>VIJAYAWADA</span>
+                    <span>Gannavaram</span>
                 </div>
                 <div class="yard-info">
-                    <div class="yard-line"><i class="fa-solid fa-location-dot"></i><span>Plot No: 48, Auto Nagar,<br>Vijayawada, Andhra Pradesh - 520007</span></div>
-                    <div class="yard-line"><i class="fa-solid fa-phone"></i><span>+91 91234 56789</span></div>
-                    <div class="yard-line"><i class="fa-regular fa-clock"></i><span>Mon - Sat : 8:00 AM - 7:00 PM</span></div>
-                    <button>VIEW LOCATION <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <div class="yard-line"><i class="fa-solid fa-location-dot"></i><span>84/2A, R.S NO 144/2A, BB Gudem Road, Gannavaram, Andhra Pradesh 521101</span></div>
+                    <div class="yard-line"><i class="fa-solid fa-phone"></i><span>+91 96522 39999</span></div>
+                    <div class="yard-line"><i class="fa-regular fa-clock"></i><span>Mon - Sat : 9:00 AM - 9:00 PM <br> Sun : CLOSE </span></div>
+                    <a href="https://share.google/uREs0XEOqddRHe4xV" target="_blank"> <button>VIEW LOCATION <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button></a>
                 </div>
             </div>
 
             <div class="yard-card">
-                <div class="yard-img" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop')">
+                <div class="yard-img" style="background-image:url('./assets/img/Gajuwaka.png')">
                     <div class="yard-num">03</div>
                 </div>
                 <div class="yard-title">
-                    <h3>VISAKHAPATNAM YARD</h3>
+                    <h3>GAJUWAKA YARD</h3>
                     <span>VISAKHAPATNAM</span>
                 </div>
                 <div class="yard-info">
-                    <div class="yard-line"><i class="fa-solid fa-location-dot"></i><span>Door No: 9-3-25/2, Gajuwaka,<br>Visakhapatnam, Andhra Pradesh - 530026</span></div>
-                    <div class="yard-line"><i class="fa-solid fa-phone"></i><span>+91 91234 56789</span></div>
-                    <div class="yard-line"><i class="fa-regular fa-clock"></i><span>Mon - Sat : 8:00 AM - 7:00 PM</span></div>
-                    <button>VIEW LOCATION <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
+                    <div class="yard-line"><i class="fa-solid fa-location-dot"></i><span>Auto Nagar, Gajuwaka, Andhra Pradesh 530012</span></div>
+                    <div class="yard-line"><i class="fa-solid fa-phone"></i><span>+91 95733 78999</span></div>
+                    <div class="yard-line"><i class="fa-regular fa-clock"></i><span>Mon - Sat : 9:00 AM - 9:00 PM <br> Sun : CLOSE </span></div>
+                    <a href="https://share.google/Ss8cBIv5rpPjSsswO" target="_blank"><button>VIEW LOCATION <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button></a>
                 </div>
             </div>
 
-            <div class="yard-card">
+            <!-- <div class="yard-card">
                 <div class="yard-img" style="background-image:url('https://images.unsplash.com/photo-1581093458791-9d15482442f6?q=80&w=800&auto=format&fit=crop')">
                     <div class="yard-num">04</div>
                 </div>
@@ -868,7 +865,7 @@
                     <div class="yard-line"><i class="fa-regular fa-clock"></i><span>Mon - Sat : 8:00 AM - 7:00 PM</span></div>
                     <button>VIEW LOCATION <i class="fa-solid fa-arrow-right ms-2 text-warning"></i></button>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -888,16 +885,16 @@
 
             <div class="india-map">
                 <i class="fa-solid fa-location-dot pin p1"></i>
-                <i class="fa-solid fa-location-dot pin p2"></i>
+                <!-- <i class="fa-solid fa-location-dot pin p2"></i> -->
                 <i class="fa-solid fa-location-dot pin p3"></i>
-                <i class="fa-solid fa-location-dot pin p4"></i>
+                <!-- <i class="fa-solid fa-location-dot pin p4"></i> -->
                 <i class="fa-solid fa-location-dot pin p5"></i>
 
-                <div class="pin-label l1">HYDERABAD</div>
-                <div class="pin-label l2">VISAMINORA</div>
-                <div class="pin-label l3">VISAKHAPATANAM</div>
-                <div class="pin-label l4">RAJAMUNDRA</div>
-                <div class="pin-label l5">KIJAAWADA</div>
+                <div class="pin-label l1">GAJUWAKA</div>
+                <!-- <div class="pin-label l2"></div> -->
+                <div class="pin-label l3">GANNAVARAM</div>
+                <!-- <div class="pin-label l4"></div> -->
+                <div class="pin-label l5">RAJAHMUNDRY</div>
             </div>
 
             <div class="network-card">
@@ -935,8 +932,8 @@
         </h2>
 
         <div class="cta-buttons">
-            <button class="btn-gold">REQUEST A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button>
-            <button class="btn-outline-gold">CONTACT US <i class="fa-solid fa-arrow-right ms-2"></i></button>
+            <a href="get_a_qoute.php"> <button class="btn-gold">REQUEST A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button></a>
+            <a href="contact.php"> <button class="btn-outline-gold">CONTACT US <i class="fa-solid fa-arrow-right ms-2"></i></button></a>
         </div>
     </section>
 
@@ -965,32 +962,30 @@
 
                 <div class="col-lg-2 offset-lg-1 footer-col">
                     <h6>QUICK LINKS</h6>
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Products</a>
-                    <a href="#">Vendors</a>
-                    <a href="#" class="active-link">Yards</a>
-                    <a href="#">Infrastructure</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
+                    <a href="index.php">Home</a>
+                    <a href="about.php">About Us</a>
+                    <a href="products.php">Products</a>
+                    <a href="vendors.php">Vendors</a>
+                    <a href="blogs.php">Blogs</a>
+                    <a href="yards.php">Yards</a>
+                    <a href="contact.php">Contact</a>
                 </div>
 
                 <div class="col-lg-2 footer-col">
                     <h6>PRODUCTS</h6>
-                    <a href="#">TMT Bars</a>
-                    <a href="#">Structural Steel</a>
-                    <a href="#">MS Pipes</a>
-                    <a href="#">Steel Sheets</a>
-                    <a href="#">Roofing Sheets</a>
-                    <a href="#">Industrial Steel Supply</a>
+                    <a href="Products.php">TMT Bars</a>
+                    <a href="Products.php">Structural Steel</a>
+                    <a href="Products.php">MS Pipes</a>
+                    <a href="Products.php">Steel Sheets</a>
+                    <a href="Products.php">Roofing Sheets</a>
                 </div>
 
                 <div class="col-lg-2 footer-col">
                     <h6>VENDORS</h6>
-                    <a href="#">JSW Steel</a>
-                    <a href="#">Tata Steel</a>
-                    <a href="#">Vizag Steel</a>
-                    <a href="#">BondX Steel</a>
+                    <a href="Vendors.php">JSW Steel</a>
+                    <a href="Vendors.php">Tata Steel</a>
+                    <a href="Vendors.php">Vizag Steel</a>
+                    <a href="Vendors.php">BondX</a>
                 </div>
 
                 <div class="col-lg-2 footer-col">

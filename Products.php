@@ -126,7 +126,8 @@
             min-height: 410px;
             background:
                 linear-gradient(90deg, rgba(2, 11, 19, .98), rgba(2, 11, 19, .82), rgba(2, 11, 19, .18)),
-                url("https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=1800&auto=format&fit=crop");
+                url("./assets/img/Gajuwaka.png");
+                /* url("https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=1800&auto=format&fit=crop"); */
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -597,7 +598,8 @@
 
                     <li><a class="nav-link" href="contact.php">CONTACT</a></li>
                     <a href="get_a_qoute.php">
-                    <li><button  class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
+                        <li><button class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -712,7 +714,7 @@
             </div>
 
             <div class="product-card">
-                <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=900&auto=format&fit=crop')">
+                <div class="product-img" style="background-image:url('./assets/img/Binding Wire.png')">
                     <div class="product-icon"><i class="fa-solid fa-layer-group"></i></div>
                 </div>
                 <div class="product-content">
@@ -728,11 +730,11 @@
             </div>
 
             <div class="product-card">
-                <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=900&auto=format&fit=crop')">
+                <div class="product-img" style="background-image:url('./assets/img/angles_channels.png')">
                     <div class="product-icon"><i class="fa-solid fa-ring"></i></div>
                 </div>
                 <div class="product-content">
-                    <h3>INDUSTRIAL STEEL SUPPLY</h3>
+                    <h3>Angles, Channels & Beam</h3>
                     <p>Bulk supply of industrial steel for large scale projects and fabrication units.</p>
                     <div class="product-list">
                         <div><i class="fa-regular fa-circle-check"></i> Bulk & Customized Orders</div>

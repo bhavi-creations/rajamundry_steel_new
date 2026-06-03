@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajamundry Steels - About Us</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark: #020b13;
+      --dark2: #061522;
+      --gold: #d6a348;
+      --gold2: #f3cc73;
+      --white: #ffffff;
+      --text: #dce4ec;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #101820;
+      background: #fff;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      background: #020b13;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .logo-mark {
+      width: 58px;
+      height: 52px;
+      border: 2px solid var(--gold);
+      color: var(--gold2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-size: 38px;
+      font-weight: 900;
+    }
+
+    .logo-wrap span {
+      color: var(--gold2);
+    }
+
+    .nav-link {
+      color: #fff !important;
+      margin: 0 13px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
+
+    .nav-link.active {
+      color: var(--gold2) !important;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #f5d989, #c48a34);
+      color: #111;
+      border: 0;
+      padding: 14px 30px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .btn-outline-gold {
+      border: 1px solid var(--gold);
+      color: #fff;
+      background: transparent;
+      padding: 14px 30px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    /* HERO */
+
+    .about-hero {
+      min-height: 610px;
+      background:
+        linear-gradient(90deg, rgba(2, 11, 19, .98) 0%, rgba(2, 11, 19, .8) 42%, rgba(2, 11, 19, .25) 100%),
+        url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop");
+      /* CHANGE THIS IMAGE: hero industrial background with R logo */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+    .about-hero .tag {
+      color: var(--gold2);
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .about-hero h1 {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: 1px;
+    }
+
+    .about-hero h1 span {
+      font-family: Georgia, serif;
+      color: var(--gold2);
+      font-size: 64px;
+    }
+
+    .hero-line {
+      width: 52px;
+      height: 3px;
+      background: var(--gold2);
+      margin: 22px 0;
+    }
+
+    .about-hero p {
+      max-width: 470px;
+      color: #e4ebf1;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    /* WHO WE ARE */
+
+    .who-section {
+      background: #f8f8f8;
+    }
+
+    .who-img {
+      min-height: 455px;
+      background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop");
+      /* CHANGE THIS IMAGE: Rajamundry Steels building */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .who-content {
+      padding: 62px 50px;
+    }
+
+    .section-tag {
+      color: #c88d32;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
+
+    .who-content h2 {
+      font-size: 36px;
+      line-height: 1.08;
+      margin: 12px 0 22px;
+    }
+
+    .who-content h2 span {
+      color: #c88d32;
+    }
+
+    .who-content p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #252c34;
+      max-width: 620px;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 35px;
+    }
+
+    .mini-stat {
+      text-align: center;
+      border-right: 1px solid #d6d6d6;
+    }
+
+    .mini-stat:last-child {
+      border-right: 0;
+    }
+
+    .mini-stat i {
+      color: #c88d32;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .mini-stat h3 {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .mini-stat small {
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .quote-card {
+      background: linear-gradient(145deg, #061522, #020b13);
+      color: #fff;
+      padding: 45px 35px;
+      border-radius: 10px;
+      box-shadow: 0 18px 35px rgba(0, 0, 0, .25);
+      min-height: 350px;
+    }
+
+    .quote-card .quote {
+      color: var(--gold2);
+      font-size: 42px;
+    }
+
+    .quote-card p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .quote-card .sign {
+      font-family: cursive;
+      color: #fff;
+      font-size: 22px;
+      margin-top: 25px;
+    }
+
+    .quote-card small {
+      color: var(--gold2);
+      font-weight: 700;
+    }
+
+    /* JOURNEY */
+
+    .journey {
+      background:
+        linear-gradient(90deg, rgba(2, 11, 19, .97), rgba(2, 11, 19, .88)),
+        url("https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1600&auto=format&fit=crop");
+      /* CHANGE THIS IMAGE: dark road / steel background */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 65px 0;
+    }
+
+    .journey h2 {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      position: relative;
+    }
+
+    .time-item {
+      text-align: center;
+      position: relative;
+    }
+
+    .circle {
+      width: 76px;
+      height: 76px;
+      margin: auto;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    }
+
+    .time-item h4 {
+      color: var(--gold2);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 19px;
+      font-weight: 800;
+      margin-top: 16px;
+    }
+
+    .time-item h6 {
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .time-item p {
+      color: #d7e0e7;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* VALUES */
+
+    .values {
+      background: #fff;
+      padding: 65px 0;
+    }
+
+    .values-title h2 {
+      font-size: 32px;
+      line-height: 1.1;
+    }
+
+    .value-card {
+      border: 1px solid #d6d6d6;
+      border-radius: 8px;
+      padding: 28px 18px;
+      height: 100%;
+      text-align: center;
+      transition: .3s;
+    }
+
+    .value-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .1);
+    }
+
+    .value-card i {
+      font-size: 38px;
+      color: #c88d32;
+      margin-bottom: 20px;
+    }
+
+    .value-card h6 {
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .value-card p {
+      font-size: 12px;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* CTA */
+
+    .cta {
+      background:
+        linear-gradient(90deg, rgba(2, 11, 19, .96), rgba(2, 11, 19, .78)),
+        url("https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=1600&auto=format&fit=crop");
+      /* CHANGE THIS IMAGE: steel rods footer CTA */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 48px 0;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+    }
+
+    .cta h2 span {
+      color: var(--gold2);
+    }
+
+    /* FOOTER */
+
+    .footer {
+      background: #020b13;
+      color: #fff;
+      padding: 45px 0 15px;
+    }
+
+    .footer p {
+      color: #cbd5df;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .footer h6 {
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .footer a {
+      color: #cbd5df;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .socials a {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold2);
+      margin-right: 9px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .14);
+      padding-top: 14px;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #b6c0c8;
+    }
+
+    .back-top {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--gold);
+      color: var(--gold2);
+      background: #020b13;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:991px) {
+      .about-hero h1 {
+        font-size: 40px;
+      }
+
+      .about-hero h1 span {
+        font-size: 48px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        max-width: 280px;
+      }
+
+      .stat-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .timeline {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quote-card {
+        margin-top: 30px;
+      }
+    }
+
+    @media(max-width:576px) {
+      .about-hero {
+        min-height: auto;
+        padding: 80px 0;
+      }
+
+      .about-hero h1 {
+        font-size: 34px;
+      }
+
+      .about-hero h1 span {
+        font-size: 40px;
+      }
+
+      .who-content {
+        padding: 45px 24px;
+      }
+
+      .stat-row {
+        grid-template-columns: 1fr;
+      }
+
+      .mini-stat {
+        border-right: 0;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+      }
+
+      .timeline {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid px-lg-5">
+      <a href="#" class="navbar-brand logo-wrap">
+        <div class="logo-mark">R</div>
+        <div>
+          RAJAMUNDRY<br>
+          <span>STEELS</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <!-- <li><a href="inde" class="nav-link">HOME</a></li>
+          <li><a href="#" class="nav-link active">ABOUT US</a></li>
+          <li><a href="#" class="nav-link">PRODUCTS</a></li>
+          <li><a href="#" class="nav-link">VENDORS</a></li>
+          <li><a href="#" class="nav-link">INFRASTRUCTURE</a></li>
+          <li><a href="#" class="nav-link">PROJECTS</a></li>
+          <li><a href="#" class="nav-link">CONTACT</a></li>
+          <li><button class="btn-gold ms-lg-4">GET A QUOTE &nbsp; <i class="fa-solid fa-arrow-right"></i></button></li> -->
+
+
+
+          <li><a class="nav-link active" href="index.php">HOME</a></li>
+          <li><a class="nav-link" href="about.php">ABOUT US</a></li>
+          <li><a class="nav-link" href="blogs.php">BLOGS</a></li>
+          <li><a class="nav-link" href="Products.php">PRODUCTS</a></li>
+          <li><a class="nav-link" href="Vendors.php">VENDORS</a></li>
+          <li><a class="nav-link" href="yards.php">YARDS</a></li>
+
+          <li><a class="nav-link" href="contact.php">CONTACT</a></li>
+          <a></a>
+          <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about-hero">
+    <div class="container-fluid px-lg-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="tag">ABOUT US</div>
+          <h1>
+            A LEGACY OF<br>
+            <span>STRENGTH.</span><br>
+            A FUTURE OF <span>TRUST.</span>
+          </h1>
+          <div class="hero-line"></div>
+          <p>
+            Rajamundry Steels has been a trusted name in the steel industry,
+            delivering quality, reliability and unmatched service for over two decades.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-gold">OUR JOURNEY &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="btn-outline-gold">OUR INFRASTRUCTURE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="who-section">
+    <div class="container-fluid">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-lg-3">
+          <div class="who-img"></div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="who-content">
+            <div class="section-tag">WHO WE ARE</div>
+            <h2>Building Relationships.<br>Delivering <span>Excellence.</span></h2>
+            <p>
+              Founded with a vision to provide premium quality steel products and exceptional service,
+              Rajamundry Steels has grown into a leading steel supplier with a strong market presence across India.
+            </p>
+            <p>
+              Our commitment to quality, ethical business practices and customer satisfaction has made us the preferred
+              choice for contractors, builders, industries and infrastructure developers.
+            </p>
+
+            <div class="stat-row">
+              <div class="mini-stat">
+                <i class="fa-solid fa-award"></i>
+                <h3>60+</h3>
+                <small>YEARS OF<br>EXPERIENCE</small>
+              </div>
+              <div class="mini-stat">
+                <i class="fa-solid fa-users"></i>
+                <h3>1000+</h3>
+                <small>HAPPY<br>CLIENTS</small>
+              </div>
+              <div class="mini-stat">
+                <i class="fa-solid fa-truck"></i>
+                <h3>5000+</h3>
+                <small>SUCCESSFUL<br>DELIVERIES</small>
+              </div>
+              <div class="mini-stat">
+                <i class="fa-regular fa-handshake"></i>
+                <h3>4+</h3>
+                <small>DIRECT VENDOR<br>PARTNERS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 d-flex align-items-center justify-content-center p-4">
+          <div class="quote-card">
+            <div class="quote">“</div>
+            <p>
+              Our mission is to strengthen every structure with the finest steel and the strongest commitment.
+            </p>
+            <div class="hero-line"></div>
+            <div class="sign">Swamy</div>
+            <small>FOUNDER</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="journey">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center">
+        <div class="col-lg-3 mb-5 mb-lg-0">
+          <div class="section-tag">OUR JOURNEY</div>
+          <h2>From Humble Beginnings<br>To Industry Leadership</h2>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="timeline">
+            <div class="time-item">
+              <div class="circle"><i class="fa-regular fa-building"></i></div>
+              <h4>1963</h4>
+              <h6>THE BEGINNING</h6>
+              <p>Started as a small steel trading firm with a big vision and strong values.</p>
+            </div>
+
+            <div class="time-item">
+              <div class="circle"><i class="fa-solid fa-arrow-trend-up"></i></div>
+              <h4>1983</h4>
+              <h6>STEADY GROWTH</h6>
+              <p>Expanded our product range and built long-term relationships.</p>
+            </div>
+
+            <div class="time-item">
+              <div class="circle"><i class="fa-regular fa-handshake"></i></div>
+              <h4>2003</h4>
+              <h6>STRONG PARTNERSHIPS</h6>
+              <p>Became direct vendors for leading steel manufacturers.</p>
+            </div>
+
+            <div class="time-item">
+              <div class="circle"><i class="fa-solid fa-warehouse"></i></div>
+              <h4>2020</h4>
+              <h6>EXPANDING INFRASTRUCTURE</h6>
+              <p>Invested in large-scale infrastructure to handle bulk demands.</p>
+            </div>
+
+            <div class="time-item">
+              <div class="circle"><i class="fa-solid fa-trophy"></i></div>
+              <h4>2026+</h4>
+              <h6>LEADING THE FUTURE</h6>
+              <p>Continuing our legacy of trust, quality and excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-3 values-title">
+          <div class="section-tag">OUR VALUES</div>
+          <h2>The Principles That<br>Define Us</h2>
+          <div class="hero-line"></div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="row g-3">
+            <div class="col-md-4 col-lg-2">
+              <div class="value-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h6>QUALITY</h6>
+                <p>We deliver only the highest quality steel products.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+              <div class="value-card">
+                <i class="fa-regular fa-handshake"></i>
+                <h6>INTEGRITY</h6>
+                <p>Honest practices and transparent dealings are our foundation.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+              <div class="value-card">
+                <i class="fa-regular fa-user"></i>
+                <h6>CUSTOMER FOCUS</h6>
+                <p>Our customers’ success is our top priority.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+              <div class="value-card">
+                <i class="fa-solid fa-gear"></i>
+                <h6>RELIABILITY</h6>
+                <p>You can count on us for consistent quality and delivery.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+              <div class="value-card">
+                <i class="fa-solid fa-users"></i>
+                <h6>TEAMWORK</h6>
+                <p>Our team works together to achieve excellence.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+              <div class="value-card">
+                <i class="fa-solid fa-seedling"></i>
+                <h6>SUSTAINABILITY</h6>
+                <p>We are committed to responsible and sustainable growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2>Let’s Build A <span>Stronger Tomorrow</span>, Together.</h2>
+          <p>Partner with Rajamundry Steels for premium quality steel and exceptional service.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <a href="get_a_qoute.php"> <button class="btn-gold me-lg-3 mb-2">REQUEST A QUOTE &nbsp; <i class="fa-solid fa-arrow-right"></i></button></a>
+          <a href="contact.php"> <button class="btn-outline-gold mb-2">CONTACT US</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <div class="logo-wrap mb-3">
+            <div class="logo-mark">R</div>
+            <div>
+              RAJAMUNDRY<br>
+              <span>STEELS</span>
+            </div>
+          </div>
+          <p>
+            Premium steel solutions for construction, industrial and commercial needs.
+            Building structures. Strengthening relationships.
+          </p>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 offset-lg-1">
+          <h6>QUICK LINKS</h6>
+          <a href="index.php">Home</a>
+          <a href="about.php">About Us</a>
+          <a href="products.php">Products</a>
+          <a href="vendors.php">Vendors</a>
+          <a href="blogs.php">Blogs</a>
+          <a href="yards.php">Yards</a>
+          <a href="contact.php">Contact</a>
+        </div>
+
+        <div class="col-lg-2">
+          <h6>PRODUCTS</h6>
+          <a href="Products.php">TMT Bars</a>
+          <a href="Products.php">Structural Steel</a>
+          <a href="Products.php">MS Pipes</a>
+          <a href="Products.php">Steel Sheets</a>
+          <a href="Products.php">Roofing Sheets</a>
+        </div>
+
+        <div class="col-lg-2">
+          <h6>VENDORS</h6>
+          <a href="Vendors.php">JSW Steel</a>
+          <a href="Vendors.php">Tata Steel</a>
+          <a href="Vendors.php">Vizag Steel</a>
+          <a href="Vendors.php">BondX</a>
+        </div>
+
+        <div class="col-lg-2">
+          <h6>CONTACT US</h6>
+          <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 91234 56789</p>
+          <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>
+          <p><i class="fa-solid fa-location-dot text-warning me-2"></i> Rajahmundry, Andhra Pradesh, India - 533101</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between">
+        <div>© 2024 Rajamundry Steels. All Rights Reserved.</div>
+        <div>Privacy Policy &nbsp; | &nbsp; Terms & Conditions</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    window.addEventListener("scroll", function() {
+      const btn = document.querySelector(".back-top");
+      if (window.scrollY > 300) {
+        btn.style.display = "flex";
+      } else {
+        btn.style.display = "none";
+      }
+    });
+
+    document.querySelector(".back-top").style.display = "none";
+  </script>
+
+</body>
+
+</html>

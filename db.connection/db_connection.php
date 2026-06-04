@@ -6,12 +6,12 @@ $servername = "localhost";
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $username = "root";
     $password = "";
-    $dbname = "appledental";
+    $dbname = "rajahmundry_steel";
 } 
 else {
-    $username = "appledentalspecialities";
-    $password = "aR6HPpKhxuyNlGcaZucfhPqCV";
-    $dbname = "appledentalspecialities";
+    $username = "";
+    $password = "";
+    $dbname = "";
     
 }
  

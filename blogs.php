@@ -1,3 +1,78 @@
+<?php
+include './db.connection/db_connection.php';
+
+// 1. Pagination Config Setup
+$limit = 5; // Per page 5 blogs
+$page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
+if ($page < 1) $page = 1;
+$offset = ($page - 1) * $limit;
+
+// 2. Filters (Service Filter + Search Filter)
+$service = isset($_GET['service']) ? $_GET['service'] : '';
+$search = isset($_GET['search']) ? $_GET['search'] : '';
+
+// 3. Build Query dynamically for Count (Total Blogs matching filter)
+$count_sql = "SELECT COUNT(*) FROM blogs WHERE 1=1";
+$params = [];
+$types = "";
+
+if (!empty($service)) {
+    $count_sql .= " AND service = ?";
+    $params[] = $service;
+    $types .= "s";
+}
+if (!empty($search)) {
+    $count_sql .= " AND (title LIKE ? OR main_content LIKE ? OR service LIKE ?)";
+    $search_param = "%" . $search . "%";
+    $params[] = $search_param;
+    $params[] = $search_param;
+    $params[] = $search_param;
+    $types .= "sss";
+}
+
+$count_stmt = $conn->prepare($count_sql);
+if (!empty($params)) {
+    $count_stmt->bind_param($types, ...$params);
+}
+$count_stmt->execute();
+$total_rows = $count_stmt->get_result()->fetch_row()[0];
+$total_pages = ceil($total_rows / $limit);
+$count_stmt->close();
+
+// 4. Fetch Main Blogs with LIMIT and OFFSET
+$sql = "SELECT id, slug, title, main_content, main_image, service, created_at FROM blogs WHERE 1=1";
+if (!empty($service)) {
+    $sql .= " AND service = ?";
+}
+if (!empty($search)) {
+    $sql .= " AND (title LIKE ? OR main_content LIKE ? OR service LIKE ?)";
+}
+$sql .= " ORDER BY created_at DESC LIMIT ? OFFSET ?";
+
+// Append limit/offset parameters
+$main_params = $params;
+$main_params[] = $limit;
+$main_params[] = $offset;
+$types .= "ii";
+
+$stmt = $conn->prepare($sql);
+$stmt->bind_param($types, ...$main_params);
+$stmt->execute();
+$result = $stmt->get_result();
+
+$blogs = [];
+while ($row = $result->fetch_assoc()) {
+    $blogs[] = $row;
+}
+$stmt->close();
+
+// 5. Popular Posts Fetch Logic (Sidebar remains static top 5)
+$popular_sql = "SELECT id, slug, title, main_image, created_at FROM blogs ORDER BY created_at DESC LIMIT 5";
+$popular_result = $conn->query($popular_sql);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -654,186 +729,174 @@
         </div>
     </section>
 
-    <section class="blog-body">
-        <div class="filter-row">
-            <div class="filter-buttons">
-                <button class="filter-btn active">ALL ARTICLES</button>
-                <button class="filter-btn">INDUSTRY INSIGHTS</button>
-                <button class="filter-btn">STEEL KNOWLEDGE</button>
-                <button class="filter-btn">MARKET TRENDS</button>
-                <button class="filter-btn">COMPANY NEWS</button>
-            </div>
-
-            <div class="search-box">
-                <input type="text" placeholder="Search blogs...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+   <section class="blog-body">
+    <div class="filter-row">
+        <div class="filter-buttons">
+            <a href="blogs.php" style="text-decoration:none;"><button class="filter-btn <?php echo empty($service) ? 'active' : ''; ?>">ALL ARTICLES</button></a>
+            <a href="blogs.php?service=INDUSTRY INSIGHTS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'INDUSTRY INSIGHTS') ? 'active' : ''; ?>">INDUSTRY INSIGHTS</button></a>
+            <a href="blogs.php?service=STEEL KNOWLEDGE" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'STEEL KNOWLEDGE') ? 'active' : ''; ?>">STEEL KNOWLEDGE</button></a>
+            <a href="blogs.php?service=MARKET TRENDS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'MARKET TRENDS') ? 'active' : ''; ?>">MARKET TRENDS</button></a>
+            <a href="blogs.php?service=COMPANY NEWS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'COMPANY NEWS') ? 'active' : ''; ?>">COMPANY NEWS</button></a>
         </div>
 
-        <div class="main-layout">
-            <div>
+        <form method="GET" action="blogs.php" class="search-box" id="searchForm">
+            <?php if(!empty($service)): ?>
+                <input type="hidden" name="service" value="<?php echo htmlspecialchars($service); ?>">
+            <?php endif; ?>
+            <input type="text" name="search" placeholder="Search blogs or services..." value="<?php echo htmlspecialchars($search); ?>">
+            <i class="fa-solid fa-magnifying-glass" onclick="document.getElementById('searchForm').submit();" style="cursor: pointer;"></i>
+        </form>
+    </div>
+
+    <div class="main-layout">
+        <div>
+            <?php if (count($blogs) > 0): ?>
+                
                 <div class="blog-grid">
-                    <div class="blog-card">
-                        <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=900&auto=format&fit=crop')">
-                            <div class="blog-tag">INDUSTRY INSIGHTS</div>
-                        </div>
-                        <div class="blog-content">
-                            <h3>The Future of Steel Industry in India: Growth, Opportunities & Beyond</h3>
-                            <p>India’s steel industry is on a robust growth path. Discover key trends, opportunities and what the future holds.</p>
-                            <div class="blog-meta">
-                                <span>May 12, 2024 &nbsp; • &nbsp; 5 min read</span>
-                                <i class="fa-solid fa-arrow-right"></i>
+                    <?php 
+                    for ($i = 0; $i < min(2, count($blogs)); $i++) {
+                        $row = $blogs[$i];
+                        $image_path = !empty($row['main_image']) ? "admin/uploads/photos/" . htmlspecialchars($row['main_image']) : "default_image.png";
+                        $blog_link_val = !empty($row['slug']) ? urlencode($row['slug']) : $row['id'];
+                        $final_url = "fullblog.php?id=" . $blog_link_val;
+                        $formatted_date = date("M d, Y", strtotime($row['created_at']));
+                        $preview = substr(strip_tags(html_entity_decode($row['main_content'])), 0, 100);
+                        $tag_name = !empty($row['service']) ? htmlspecialchars($row['service']) : "STEEL KNOWLEDGE";
+                    ?>
+                        <div class="blog-card" onclick="window.location.href='<?php echo $final_url; ?>';" style="cursor: pointer;">
+                            <div class="blog-img" style="background-image:url('<?php echo $image_path; ?>')">
+                                <div class="blog-tag"><?php echo strtoupper($tag_name); ?></div>
+                            </div>
+                            <div class="blog-content">
+                                <h3><?php echo htmlspecialchars($row['title']); ?></h3>
+                                <p><?php echo $preview; ?>...</p>
+                                <div class="blog-meta">
+                                    <span><?php echo $formatted_date; ?> &nbsp; • &nbsp; 5 min read</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=900&auto=format&fit=crop')">
-                            <div class="blog-tag">STEEL KNOWLEDGE</div>
-                        </div>
-                        <div class="blog-content">
-                            <h3>TMT Bars: The Backbone of Strong and Safe Construction</h3>
-                            <p>Learn about the grades, strength and quality factors that make TMT bars essential for modern constructions.</p>
-                            <div class="blog-meta">
-                                <span>Apr 28, 2024 &nbsp; • &nbsp; 4 min read</span>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
 
-                <div class="small-blog-grid">
-                    <div class="blog-card">
-                        <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=700&auto=format&fit=crop')">
-                            <div class="blog-tag">MARKET TRENDS</div>
-                        </div>
-                        <div class="blog-content">
-                            <h3>Steel Market Update: Prices, Demand & Outlook</h3>
-                            <p>An overview of the current steel market scenario, price trends and what industry experts are predicting.</p>
-                            <div class="blog-meta">
-                                <span>May 15, 2024 &nbsp; • &nbsp; 5 min read</span>
-                                <i class="fa-solid fa-arrow-right"></i>
+                <?php if (count($blogs) > 2): ?>
+                    <div class="small-blog-grid">
+                        <?php 
+                        for ($i = 2; $i < count($blogs); $i++) {
+                            $row = $blogs[$i];
+                            $image_path = !empty($row['main_image']) ? "admin/uploads/photos/" . htmlspecialchars($row['main_image']) : "default_image.png";
+                            $blog_link_val = !empty($row['slug']) ? urlencode($row['slug']) : $row['id'];
+                            $final_url = "fullblog.php?id=" . $blog_link_val;
+                            $formatted_date = date("M d, Y", strtotime($row['created_at']));
+                            $preview = substr(strip_tags(html_entity_decode($row['main_content'])), 0, 100);
+                            $tag_name = !empty($row['service']) ? htmlspecialchars($row['service']) : "STEEL KNOWLEDGE";
+                        ?>
+                            <div class="blog-card" onclick="window.location.href='<?php echo $final_url; ?>';" style="cursor: pointer;">
+                                <div class="blog-img" style="background-image:url('<?php echo $image_path; ?>')">
+                                    <div class="blog-tag"><?php echo strtoupper($tag_name); ?></div>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><?php echo htmlspecialchars($row['title']); ?></h3>
+                                    <p><?php echo $preview; ?>...</p>
+                                    <div class="blog-meta">
+                                        <span><?php echo $formatted_date; ?> &nbsp; • &nbsp; 5 min read</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        <?php } ?>
                     </div>
+                <?php endif; ?>
 
-                    <div class="blog-card">
-                        <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=700&auto=format&fit=crop')">
-                            <div class="blog-tag">STEEL KNOWLEDGE</div>
-                        </div>
-                        <div class="blog-content">
-                            <h3>Structural Steel vs MS Steel: Key Differences Explained</h3>
-                            <p>Confused between structural steel and mild steel? Here’s a detailed comparison to help you choose the right material.</p>
-                            <div class="blog-meta">
-                                <span>Apr 02, 2024 &nbsp; • &nbsp; 5 min read</span>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
+            <?php else: ?>
+                <p style="text-align: center; padding: 40px; font-weight: bold; color: #666;">No blog posts found matching your search criteria.</p>
+            <?php endif; ?>
 
-                    <div class="blog-card">
-                        <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=700&auto=format&fit=crop')">
-                            <div class="blog-tag">COMPANY NEWS</div>
-                        </div>
-                        <div class="blog-content">
-                            <h3>Sustainability in Steel: Our Commitment to a Greener Tomorrow</h3>
-                            <p>How Rajamundry Steels is contributing towards a sustainable future through responsible sourcing and eco-friendly practices.</p>
-                            <div class="blog-meta">
-                                <span>Mar 20, 2024 &nbsp; • &nbsp; 4 min read</span>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <?php if ($total_pages > 1): ?>
                 <div class="pagination-wrap">
-                    <button class="page-btn active">1</button>
-                    <button class="page-btn">2</button>
-                    <button class="page-btn">3</button>
-                    <button class="page-btn">...</button>
-                    <button class="page-btn">8</button>
-                    <button class="page-btn" style="width:80px;">Next <i class="fa-solid fa-arrow-right text-warning ms-2"></i></button>
+                    <?php 
+                    // Build base URL for pagination parameters preservation
+                    $url_parts = [];
+                    if (!empty($service)) $url_parts[] = "service=" . urlencode($service);
+                    if (!empty($search)) $url_parts[] = "search=" . urlencode($search);
+                    $base_url = "blogs.php?" . (count($url_parts) > 0 ? implode("&", $url_parts) . "&" : "");
+                    
+                    // Page Loop
+                    for ($p = 1; $p <= $total_pages; $p++) {
+                        $active_class = ($p == $page) ? 'active' : '';
+                        echo "<a href='{$base_url}page={$p}' style='text-decoration:none;'><button class='page-btn {$active_class}'>{$p}</button></a>";
+                    }
+                    
+                    // Next Button setup
+                    if ($page < $total_pages) {
+                        $next_page = $page + 1;
+                        echo "<a href='{$base_url}page={$next_page}' style='text-decoration:none;'><button class='page-btn' style='width:80px;'>Next <i class='fa-solid fa-arrow-right text-warning ms-2'></i></button></a>";
+                    }
+                    ?>
                 </div>
-            </div>
-
-            <aside>
-                <div class="sidebar-card">
-                    <h3>Popular Posts</h3>
-                    <div class="sidebar-line"></div>
-
-                    <div class="popular-post">
-                        <div class="post-num">1</div>
-                        <div class="post-img" style="background-image:url('https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=300&auto=format&fit=crop')"></div>
-                        <div>
-                            <h5>TMT Bars: The Backbone of Strong and Safe Construction</h5>
-                            <p>Apr 28, 2024</p>
-                        </div>
-                    </div>
-
-                    <div class="popular-post">
-                        <div class="post-num">2</div>
-                        <div class="post-img" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=300&auto=format&fit=crop')"></div>
-                        <div>
-                            <h5>Steel Market Update: Prices, Demand & Outlook</h5>
-                            <p>Apr 15, 2024</p>
-                        </div>
-                    </div>
-
-                    <div class="popular-post">
-                        <div class="post-num">3</div>
-                        <div class="post-img" style="background-image:url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=300&auto=format&fit=crop')"></div>
-                        <div>
-                            <h5>How to Choose the Right Steel for Your Project</h5>
-                            <p>Mar 05, 2024</p>
-                        </div>
-                    </div>
-
-                    <div class="popular-post">
-                        <div class="post-num">4</div>
-                        <div class="post-img" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=300&auto=format&fit=crop')"></div>
-                        <div>
-                            <h5>Understanding Steel Grades: Fe 500, Fe 550 and More</h5>
-                            <p>Feb 18, 2024</p>
-                        </div>
-                    </div>
-
-                    <div class="popular-post">
-                        <div class="post-num">5</div>
-                        <div class="post-img" style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=300&auto=format&fit=crop')"></div>
-                        <div>
-                            <h5>Innovations Driving the Steel Industry Forward</h5>
-                            <p>Jan 30, 2024</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sidebar-card newsletter">
-                    <div class="newsletter-icon"><i class="fa-regular fa-envelope"></i></div>
-                    <h4>Subscribe to Our Newsletter</h4>
-                    <p>Get the latest industry insights, company updates and trends straight to your inbox.</p>
-                    <input type="email" placeholder="Enter your email address">
-                    <button class="btn-gold w-100">SUBSCRIBE <i class="fa-solid fa-arrow-right ms-2"></i></button>
-                    <small>We respect your privacy.</small>
-                </div>
-            </aside>
+            <?php endif; ?>
         </div>
 
-        <section class="cta-strip">
-            <div class="cta-left">
-                <div class="cta-icon">
-                    <i class="fa-regular fa-file-lines"></i>
-                </div>
-                <div>
-                    <h3>Have a Project in Mind?</h3>
-                    <h3><span>Get the Best Steel Solution Today.</span></h3>
-                </div>
+        <aside>
+            <div class="sidebar-card">
+                <h3>Popular Posts</h3>
+                <div class="sidebar-line"></div>
+
+                <?php
+                if ($popular_result && $popular_result->num_rows > 0) {
+                    $rank = 1;
+                    while ($p_row = $popular_result->fetch_assoc()) {
+                        $p_image = !empty($p_row['main_image']) ? "admin/uploads/photos/" . htmlspecialchars($p_row['main_image']) : "default_image.png";
+                        $p_url = "fullblog.php?id=" . (!empty($p_row['slug']) ? urlencode($p_row['slug']) : $p_row['id']);
+                        $p_date = date("M d, Y", strtotime($p_row['created_at']));
+                ?>
+                        <div class="popular-post" onclick="window.location.href='<?php echo $p_url; ?>';" style="cursor: pointer;">
+                            <div class="post-num"><?php echo $rank++; ?></div>
+                            <div class="post-img" style="background-image:url('<?php echo $p_image; ?>')"></div>
+                            <div>
+                                <h5><?php echo htmlspecialchars($p_row['title']); ?></h5>
+                                <p><?php echo $p_date; ?></p>
+                            </div>
+                        </div>
+                <?php
+                    }
+                } else {
+                    echo "<p>No recent posts available.</p>";
+                }
+                ?>
             </div>
 
-            <a href="get_a_qoute.php"> <button class="btn-gold">
-                    GET A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i>
-                </button></a>
-        </section>
+            <div class="sidebar-card newsletter">
+                <div class="newsletter-icon"><i class="fa-regular fa-envelope"></i></div>
+                <h4>Subscribe to Our Newsletter</h4>
+                <p>Get the latest industry insights, company updates and trends straight to your inbox.</p>
+                <input type="email" placeholder="Enter your email address">
+                <button class="btn-gold w-100">SUBSCRIBE <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                <small>We respect your privacy.</small>
+            </div>
+        </aside>
+    </div>
+
+    <section class="cta-strip">
+        <div class="cta-left">
+            <div class="cta-icon">
+                <i class="fa-regular fa-file-lines"></i>
+            </div>
+            <div>
+                <h3>Have a Project in Mind?</h3>
+                <h3><span>Get the Best Steel Solution Today.</span></h3>
+            </div>
+        </div>
+        <a href="get_a_qoute.php"> 
+            <button class="btn-gold">GET A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button>
+        </a>
     </section>
+</section>
+
+<?php 
+
+$conn->close();
+?>
 
     <footer class="footer">
         <div class="container-fluid px-lg-5">
@@ -926,6 +989,8 @@
             });
         });
     </script>
+
+
 
 </body>
 

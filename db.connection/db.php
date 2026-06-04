@@ -4,11 +4,11 @@ $host = 'localhost';
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $user = "root";
     $pass = "";
-    $db = "appledental";
+    $db = "rajahmundry_steel";
 } else {
-    $user = "appledentalspecialities";
-    $pass = "aR6HPpKhxuyNlGcaZucfhPqCV";
-    $db = "appledentalspecialities";
+    $user = "";
+    $pass = "";
+    $db = "";
 }
 
 

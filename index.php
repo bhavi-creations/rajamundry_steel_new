@@ -401,7 +401,7 @@
                 <div class="logo-box">R</div>
                 <div>
                     RAJAMUNDRY<br>STEELS
-                    <small>BUILT ON TRUST. ENGINEERED FOR TOMORROW.</small>
+                    <!-- <small>BUILT ON TRUST. ENGINEERED FOR TOMORROW.</small> -->
                 </div>
             </a>
 
@@ -420,7 +420,7 @@
 
                     <li><a class="nav-link" href="contact.php">CONTACT</a></li>
                     <a></a>
-                    <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
+                    <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE  </button></li></a>
                 </ul>
             </div>
         </div>
@@ -513,7 +513,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about px-3" id="about">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">

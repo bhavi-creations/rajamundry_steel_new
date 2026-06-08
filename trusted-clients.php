@@ -346,10 +346,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
     <a class="navbar-brand logo" href="#">
-      <div class="logo-box">R</div>
+      <!-- <div class="logo-box">R</div> -->
       <div>
-        RAJAMUNDRY<br>STEELS
-        <small>BUILT ON TRUST. ENGINEERED FOR TOMORROW.</small>
+        <img src="./assets/img/logo.png" alt="logo">
+        <!-- RAJAMUNDRY<br>STEELS
+        <small>BUILT ON TRUST. ENGINEERED FOR TOMORROW.</small> -->
       </div>
     </a>
 
@@ -556,7 +557,7 @@
       </div>
       <div class="col-lg-3">
         <button class="btn-gold mb-2">REQUEST A QUOTE →</button>
-        <button class="btn-outline-gold">CHAT ON WHATSAPP</button>
+      <a  href="https://wa.me/919652239999" target="_blank">  <button class="btn-outline-gold">CHAT ON WHATSAPP</button></a>
       </div>
     </div>
   </div>
@@ -567,8 +568,9 @@
     <div class="row g-4">
       <div class="col-md-3">
         <div class="logo mb-3">
-          <div class="logo-box">R</div>
-          <div>RAJAMUNDRY<br>STEELS</div>
+          <!-- <div class="logo-box">R</div>
+          <div>RAJAMUNDRY<br>STEELS</div> -->
+          <img src="./assets/img/logo.png" alt="logo">
         </div>
         <p>Premium steel solutions for construction, industrial and commercial needs.</p>
       </div>
@@ -604,7 +606,7 @@
         <h6>CONTACT US</h6>
         <p>📞 +91 90534 55789</p>
         <p>✉ info@rajamundrysteels.com</p>
-        <p>📍 Rajahmundry, Andhra Pradesh, India - 533101</p>
+        <p>📍 Aditya Nagar, Rajamahendravaram, Andhra Pradesh 533107</p>
       </div>
     </div>
 

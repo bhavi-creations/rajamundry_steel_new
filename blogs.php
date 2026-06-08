@@ -686,11 +686,12 @@ $popular_result = $conn->query($popular_sql);
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid px-lg-5">
             <a href="#" class="navbar-brand logo-wrap">
-                <div class="logo-mark">R</div>
+                <!-- <div class="logo-mark">R</div> -->
                 <div>
-                    RAJAMUNDRY<br>
+                    <!-- RAJAMUNDRY<br>
                     <span>STEELS</span>
-                    <div class="logo-sub">BUILDING STRENGTH. DELIVERING TRUST.</div>
+                    <div class="logo-sub">BUILDING STRENGTH. DELIVERING TRUST.</div> -->
+                    <img src="./assets/img/logo.png" alt="logo">
                 </div>
             </a>
 
@@ -904,17 +905,18 @@ $conn->close();
             <div class="row g-4">
                 <div class="col-lg-3">
                     <div class="logo-wrap mb-3">
-                        <div class="logo-mark">R</div>
-                        <div>RAJAMUNDRY<br><span>STEELS</span></div>
+                        <img src="./assets/img/logo.png" alt="logo">
+                        <!-- <div class="logo-mark">R</div> -->
+                        <!-- <div>RAJAMUNDRY<br><span>STEELS</span></div> -->
                     </div>
                     <p>
                         Premium steel solutions for construction, industrial and commercial needs.
                         Building strength. Delivering trust.
                     </p>
                     <div class="socials">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                     <a href=" https://www.facebook.com/RajahmundrySteels/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/rajahmundrysteels/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@RajahmundrySteels-1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -951,14 +953,14 @@ $conn->close();
 
                 <div class="col-lg-2 footer-col">
                     <h6>CONTACT US</h6>
-                    <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 91234 56789</p>
+                    <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
                     <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>
-                    <p><i class="fa-solid fa-location-dot text-warning me-2"></i> 12-15-3/1, Industrial Area,<br>Rajahmundry, Andhra Pradesh - 533101</p>
+                    <p><i class="fa-solid fa-location-dot text-warning me-2"></i> Aditya Nagar, Rajamahendravaram, Andhra Pradesh 533107</p>
                 </div>
             </div>
 
             <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between">
-                <div>© 2024 Rajamundry Steels. All Rights Reserved.</div>
+                <div>© 2026 Rajamundry Steels. All Rights Reserved.</div>
                 <div>Privacy Policy &nbsp; | &nbsp; Terms & Conditions</div>
             </div>
         </div>

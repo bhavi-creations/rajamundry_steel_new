@@ -66,15 +66,15 @@ $count_stmt->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= strip_tags($title) ?> - Rajamundry Steels</title>
-    
+
     <!-- Swiper and Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Icons Libraries -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    
+
     <style>
         :root {
             --dark: #020b13;
@@ -98,7 +98,12 @@ $count_stmt->close();
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: Georgia, 'Times New Roman', serif;
             font-weight: 700;
         }
@@ -207,14 +212,14 @@ $count_stmt->close();
             margin-bottom: 25px;
         }
 
-        .full_blogs_section_feature_img, 
+        .full_blogs_section_feature_img,
         .full_blogs_section_feature_video {
             width: 100%;
             max-height: 500px;
             object-fit: cover;
             border-radius: 15px;
             margin-bottom: 35px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
         .full_blogs_section_article {
@@ -336,7 +341,7 @@ $count_stmt->close();
             height: 100%;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
         }
 
         .custom-card:hover {
@@ -359,7 +364,7 @@ $count_stmt->close();
             margin-top: 15px;
             line-height: 1.4;
         }
-        
+
         .blog-card-text:hover {
             color: #051aff;
         }
@@ -468,12 +473,13 @@ $count_stmt->close();
 
 
         @media (min-width: 992px) {
-    .sticky-sidebar {
-        position: sticky;
-        top: 90px; /* Navbar block avvakunda gap kosam */
-        z-index: 10;
-    }
-}
+            .sticky-sidebar {
+                position: sticky;
+                top: 90px;
+                /* Navbar block avvakunda gap kosam */
+                z-index: 10;
+            }
+        }
     </style>
 </head>
 
@@ -483,10 +489,11 @@ $count_stmt->close();
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid px-lg-5">
             <a href="index.php" class="navbar-brand logo-wrap">
-                <div class="logo-mark">R</div>
+                <!-- <div class="logo-mark">R</div> -->
                 <div>
-                    RAJAMUNDRY<br>
-                    <span>STEELS</span>
+                    <img src="./assets/img/logo.png" alt="logo">
+                    <!-- RAJAMUNDRY<br>
+                    <span>STEELS</span> -->
                 </div>
             </a>
 
@@ -546,7 +553,7 @@ $count_stmt->close();
                                 <source src="./admin/uploads/videos/<?= $video ?>" type="video/mp4">
                             </video>
                         <?php else: ?>
-                            <img class="full_blogs_section_feature_img" src="<?= !empty($main_image) ? "./admin/uploads/photos/".$main_image : "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=80" ?>" alt="<?= htmlspecialchars($title) ?>">
+                            <img class="full_blogs_section_feature_img" src="<?= !empty($main_image) ? "./admin/uploads/photos/" . $main_image : "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=80" ?>" alt="<?= htmlspecialchars($title) ?>">
                         <?php endif; ?>
 
                         <article class="full_blogs_section_article">
@@ -598,9 +605,10 @@ $count_stmt->close();
                             </div>
                             <p>Premium steel solutions for construction, industrial, and commercial needs. Building structures, strengthening relationships.</p>
                             <div class="full_blogs_section_social_round">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href=" https://www.facebook.com/RajahmundrySteels/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/rajahmundrysteels/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@RajahmundrySteels-1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                             </div>
                         </div>
 
@@ -609,7 +617,7 @@ $count_stmt->close();
                             <div class="full_blogs_section_social_round">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
                                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
                             </div>
@@ -655,10 +663,11 @@ $count_stmt->close();
             <div class="row g-4">
                 <div class="col-lg-3">
                     <div class="logo-wrap mb-3">
-                        <div class="logo-mark">R</div>
+                        <!-- <div class="logo-mark">R</div> -->
                         <div>
-                            RAJAMUNDRY<br>
-                            <span>STEELS</span>
+                            <img src="./assets/img/logo.png" alt="logo">
+                            <!-- RAJAMUNDRY<br>
+                            <span>STEELS</span> -->
                         </div>
                     </div>
                     <p>
@@ -668,7 +677,7 @@ $count_stmt->close();
                     <div class="socials">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -703,14 +712,14 @@ $count_stmt->close();
 
                 <div class="col-lg-2">
                     <h6>CONTACT US</h6>
-                    <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 91234 56789</p>
+                    <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
                     <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>
-                    <p><i class="fa-solid fa-location-dot text-warning me-2"></i> Rajahmundry, Andhra Pradesh, India - 533101</p>
+                    <p><i class="fa-solid fa-location-dot text-warning me-2"></i> Aditya Nagar, Rajamahendravaram, Andhra Pradesh 533107</p>
                 </div>
             </div>
 
             <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between">
-                <div>© 2024 Rajamundry Steels. All Rights Reserved.</div>
+                <div>© 2026 Rajamundry Steels. All Rights Reserved.</div>
                 <div>Privacy Policy &nbsp; | &nbsp; Terms & Conditions</div>
             </div>
         </div>
@@ -724,7 +733,7 @@ $count_stmt->close();
     <!-- Scripts Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <script>
         // Language Toggle Logic Engine
         const enBtn = document.getElementById("english-btn");
@@ -732,7 +741,7 @@ $count_stmt->close();
 
         function switchLang(lang) {
             const isEn = (lang === 'en');
-            
+
             // Toggle Display Visibility
             document.getElementById("title-en").style.display = isEn ? "inline" : "none";
             document.getElementById("main-en").style.display = isEn ? "block" : "none";
@@ -814,5 +823,6 @@ $count_stmt->close();
         document.querySelector(".back-top").style.display = "none";
     </script>
 </body>
+
 </html>
 <?php $conn->close(); ?>

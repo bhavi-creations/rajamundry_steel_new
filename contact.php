@@ -131,7 +131,8 @@
       min-height: 470px;
       background:
         linear-gradient(90deg, rgba(2, 11, 19, .98) 0%, rgba(2, 11, 19, .82) 45%, rgba(2, 11, 19, .18) 100%),
-        url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop");
+        url("./assets/img/bg_1.png");
+      /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop"); */
       background-size: cover;
       background-position: center;
       color: #fff;
@@ -713,11 +714,12 @@
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid px-lg-5">
       <a href="#" class="navbar-brand logo-wrap">
-        <div class="logo-mark">R</div>
+        <!-- <div class="logo-mark">R</div> -->
         <div>
-          RAJAMUNDRY<br>
+          <img src="./assets/img/logo.png" alt="logo">
+          <!-- RAJAMUNDRY<br>
           <span>STEELS</span>
-          <div class="logo-sub">BUILDING STRENGTH. DELIVERING TRUST.</div>
+          <div class="logo-sub">BUILDING STRENGTH. DELIVERING TRUST.</div> -->
         </div>
       </a>
 
@@ -736,7 +738,8 @@
 
           <li><a class="nav-link" href="contact.php">CONTACT</a></li>
           <a href="get_a_qoute.php">
-          <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
+            <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li>
+          </a>
         </ul>
       </div>
     </div>
@@ -855,12 +858,12 @@
           <div class="quote-content">
             <h3>Need a Quick Quote?</h3>
             <p>Share your requirement and our team will provide the best price.</p>
-            <a href=""><button class="btn-outline-gold">
+            <a href="get_a_qoute.php"><button class="btn-outline-gold">
                 REQUEST A QUOTE &nbsp; <i class="fa-solid fa-arrow-right"></i>
               </button>
             </a>
             <h3 class="mt-4" style="font-size:22px;color:#fff;">Chat With Us<br>on WhatsApp</h3>
-            <a class="whatsapp-btn" href="">
+            <a class="whatsapp-btn  " href="https://wa.me/919652239999" target="_blank">
               <i class="fa-brands fa-whatsapp text-warning"></i>
               +91 96522 39999
             </a>
@@ -890,7 +893,7 @@
         <div class="loc-item">
           <i class="fa-solid fa-location-dot"></i>
           <div>
-            <h6>Vijayawada</h6>
+            <h6>Gajuwaka</h6>
             <p>Strategic Yard</p>
           </div>
           <span class="arrow">›</span>
@@ -899,33 +902,41 @@
         <div class="loc-item">
           <i class="fa-solid fa-location-dot"></i>
           <div>
-            <h6>Visakhapatnam</h6>
+            <h6>Gannavaram</h6>
             <p>Supply Yard</p>
           </div>
           <span class="arrow">›</span>
         </div>
 
-        <div class="loc-item">
+        <!-- <div class="loc-item">
           <i class="fa-solid fa-location-dot"></i>
           <div>
             <h6>Hyderabad</h6>
             <p>Supply Yard</p>
           </div>
           <span class="arrow">›</span>
-        </div>
+        </div> -->
       </div>
+
 
       <div class="map-box">
-        <i class="fa-solid fa-location-dot pin hyd"></i>
-        <i class="fa-solid fa-location-dot pin vizag"></i>
-        <i class="fa-solid fa-location-dot pin vij"></i>
-        <i class="fa-solid fa-location-dot pin pin-main raj"></i>
+        <!-- <i class="fa-solid fa-location-dot pin hyd"></i> -->
+        <a href="https://share.google/mhKtK1kYh8SUU1vKJ" target="_blank"><i class="fa-solid fa-location-dot pin vizag"></i></a>
+        <a href="https://share.google/qwrhZTdBUigyR1dUo" target="_blank"> <i class="fa-solid fa-location-dot pin vij"></i></a>
+        <a href="https://share.google/YRsC3kNzsrzempvnI" target="_blank"> <i class="fa-solid fa-location-dot pin pin-main raj"></i></a>
 
-        <div class="map-label label-hyd">Hyderabad</div>
-        <div class="map-label label-vizag">Visakhapatnam</div>
-        <div class="map-label label-vij">Vijayawada</div>
-        <div class="map-label label-raj">Rajahmundry</div>
+        <!-- <div class="map-label label-hyd">Hyderabad</div> -->
+        <a href="https://share.google/mhKtK1kYh8SUU1vKJ" target="_blank">
+          <div class="map-label label-vizag">RAJAHMUNDRY</div>
+        </a>
+        <a href="https://share.google/qwrhZTdBUigyR1dUo" target="_blank">
+          <div class="map-label label-vij">Gannavaram</div>
+        </a>
+        <a href="https://share.google/YRsC3kNzsrzempvnI" target="_blank">
+          <div class="map-label label-raj">Gajuwaka</div>
+        </a>
       </div>
+
     </div>
   </section>
 
@@ -954,10 +965,13 @@
       <div class="row g-4">
         <div class="col-lg-3">
           <div class="logo-wrap mb-3">
-            <div class="logo-mark">R</div>
+            <!-- <div class="logo-mark">R</div> -->
             <div>
-              RAJAMUNDRY<br>
-              <span>STEELS</span>
+              <!-- RAJAMUNDRY<br>
+
+              <span>STEELS</span> -->
+
+              <img src="./assets/img/logo.png" alt="logo">
             </div>
           </div>
           <p>
@@ -965,10 +979,10 @@
             Building strength. Delivering trust.
           </p>
           <div class="socials">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=" https://www.facebook.com/RajahmundrySteels/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/rajahmundrysteels/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@RajahmundrySteels-1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
 
@@ -1003,14 +1017,14 @@
 
         <div class="col-lg-2 footer-col">
           <h6>CONTACT US</h6>
-          <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 91234 56789</p>
+          <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
           <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>
-          <p><i class="fa-solid fa-location-dot text-warning me-2"></i> 12-15-3/1, Industrial Area,<br>Rajahmundry, Andhra Pradesh - 533101</p>
+          <p><i class="fa-solid fa-location-dot text-warning me-2"></i> Aditya Nagar, Rajamahendravaram, Andhra Pradesh 533107</p>
         </div>
       </div>
 
       <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between">
-        <div>© 2024 Rajamundry Steels. All Rights Reserved.</div>
+        <div>© 2026 Rajamundry Steels. All Rights Reserved.</div>
         <div>Privacy Policy &nbsp; | &nbsp; Terms & Conditions</div>
       </div>
     </div>

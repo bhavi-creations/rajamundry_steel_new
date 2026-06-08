@@ -126,8 +126,8 @@
             min-height: 410px;
             background:
                 linear-gradient(90deg, rgba(2, 11, 19, .98), rgba(2, 11, 19, .82), rgba(2, 11, 19, .18)),
-                url("./assets/img/Gajuwaka.png");
-                /* url("https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=1800&auto=format&fit=crop"); */
+                url("./assets/img/bg_1.png");
+            /* url("https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=1800&auto=format&fit=crop"); */
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -615,11 +615,10 @@
                 </h1>
                 <div class="gold-line"></div>
                 <p>
-                    We offer a wide range of high-quality steel products sourced from trusted
-                    manufacturers, ensuring strength, durability and superior performance for every application.
+                    As a leading industrial steel supplier, we offer a comprehensive range of high-quality steel products sourced directly from trusted manufacturers. We ensure ultimate strength, durability, and superior performance for every construction, engineering, and manufacturing application.
                 </p>
 
-                <div class="hero-features">
+                <div class="hero-features pb-5">
                     <div class="hero-feature">
                         <i class="fa-solid fa-award"></i>
                         <h6>SUPERIOR<br>QUALITY</h6>

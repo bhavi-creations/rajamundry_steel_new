@@ -114,7 +114,7 @@
             background:
                 linear-gradient(90deg, rgba(2, 11, 19, .98) 0%, rgba(2, 11, 19, .85) 42%, rgba(2, 11, 19, .35) 100%),
                 url("./assets/img/rajahmundry.png");
-                /* url("https://images.unsplash.com/photo-1581093458791-9d15482442f6?q=80&w=1600&auto=format&fit=crop"); */
+            /* url("https://images.unsplash.com/photo-1581093458791-9d15482442f6?q=80&w=1600&auto=format&fit=crop"); */
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -217,7 +217,7 @@
             /* background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"); */
             background-size: cover;
             background-position: center;
-           
+
         }
 
         .about p {
@@ -266,7 +266,7 @@
             background:
                 linear-gradient(90deg, rgba(2, 11, 19, .98), rgba(2, 11, 19, .75)),
                 url("./assets/img/gallrey_3.png");
-                /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1600&auto=format&fit=crop"); */
+            /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1600&auto=format&fit=crop"); */
             background-size: cover;
             color: #fff;
         }
@@ -420,7 +420,7 @@
 
                     <li><a class="nav-link" href="contact.php">CONTACT</a></li>
                     <a></a>
-                    <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE  </button></li></a>
+                    <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE </button></li></a>
                 </ul>
             </div>
         </div>
@@ -429,9 +429,12 @@
     <section class="hero">
         <div class="container">
             <p class="gold-text fw-bold">PREMIUM STEEL SOLUTIONS</p>
-            <h1>STRENGTH<br><span class="gold-text">BEYOND</span><br>STRUCTURES.</h1>
-            <p>Rajamundry Steels is a leading steel supplier with direct vendor partnerships with JSW Steel, Tata Steel, Vizag Steel and BondX.</p>
 
+
+            <h1>TRUSTED STEEL<br><span class="gold-text">STRONGER</span><br>FOUNDATIONS.</h1>
+            <!-- <p>Rajamundry Steels is a leading steel supplier with direct vendor partnerships with JSW Steel, Tata Steel, Vizag Steel and BondX.</p> -->
+            <p>Rajahmundry Steels is a leading steel distributor and supplier in Andhra Pradesh with direct partnerships with JSW Steel, Tata Steel, Vizag Steel, and BondX. Serving customers through our branches in Rajahmundry, Gajuwaka (Visakhapatnam), and Gannavaram (Vijayawada).
+            </p>
             <div class="mt-4">
                 <button class="btn-gold me-3">GET BEST PRICE →</button>
                 <button class="btn-outline-gold">EXPLORE PRODUCTS</button>
@@ -446,7 +449,7 @@
                 <div class="feature"><span>▦</span>BULK SUPPLY<br>SPECIALISTS</div>
 
                 <div class="feature"><span>▸</span>ON-TIME<br>DELIVERY</div>
- 
+
 
 
 
@@ -522,7 +525,7 @@
                 <div class="col-lg-6">
                     <p class="gold-text fw-bold">ABOUT US</p>
                     <h2>A LEGACY OF TRUST.<br>A FUTURE OF <span class="gold-text">STRENGTH.</span></h2>
-                    <p>With decades of experience, Rajamundry Steels has become a trusted partner for construction, industrial and commercial projects. We are committed to delivering premium quality steel with reliability, transparency and timely service.</p>
+                    <p>With decades of industry experience, Rajahmundry Steels is a trusted steel supplier for construction, industrial, and commercial projects across Andhra Pradesh. We deliver premium-quality steel products with reliability, competitive pricing, and timely service.</p>
                     <a href="about.php"><button class="btn-outline-gold">KNOW MORE ABOUT US →</button></a>
                 </div>
             </div>
@@ -542,8 +545,7 @@
                         <div class="product-img" style="background-image:url('./assets/img/TMT.png')"></div>
                         <div class="p-3">
                             <h5>TMT BARS</h5>
-                            <p>High-strength reinforcement steels used in residential and commercial construction with excellent load-bearing capacity and earthquake resistance.</p>
-                            <!-- <a href="#">ENQUIRE NOW →</a> -->
+                            <p>High-strength TMT reinforcement bars for residential, commercial, and infrastructure projects. Designed for superior durability, load-bearing capacity, and earthquake resistance.</p> <!-- <a href="#">ENQUIRE NOW →</a> -->
                         </div>
                     </div>
                 </div>
@@ -553,8 +555,7 @@
                         <div class="product-img" style="background-image:url('./assets/img/Structural\ Steel.png')"></div>
                         <div class="p-3">
                             <h5>STRUCTURAL STEEL</h5>
-                            <p>Used for building frameworks, warehouses, factories, and bridges — providing superior strength, stability, and long-lasting durability.</p>
-                            <!-- <a href="#">ENQUIRE NOW →</a> -->
+                            <p>Premium structural steel for buildings, warehouses, factories, and bridges. Engineered for maximum strength, stability, and long-term performance.</p> <!-- <a href="#">ENQUIRE NOW →</a> -->
                         </div>
                     </div>
                 </div>
@@ -564,7 +565,7 @@
                         <div class="product-img" style="background-image:url('./assets/img/ms.png')"></div>
                         <div class="p-3">
                             <h5>MS PRODUCTS</h5>
-                            <p>Widely used in fabrication, gates, grills, and industrial works. Easy to cut, weld, and shape for multiple applications.</p>
+                            <p>Quality mild steel products used in fabrication, gates, grills, and industrial applications. Easy to weld, cut, and customize for diverse requirements.</p>
                             <!-- <a href="#">ENQUIRE NOW →</a> -->
                         </div>
                     </div>
@@ -575,7 +576,7 @@
                         <div class="product-img" style="background-image:url('./assets/img/Steel_Sheets.png')"></div>
                         <div class="p-3">
                             <h5>STEEL SHEETS</h5>
-                            <p>Used for roofing, cladding, and industrial manufacturing. Durable, weather-resistant, and available in multiple gauges.</p>
+                            <p>Durable steel sheets for roofing, cladding, fabrication, and manufacturing industries. Available in multiple sizes, thicknesses, and specifications.</p>
                             <!-- <a href="#">ENQUIRE NOW →</a> -->
                         </div>
                     </div>
@@ -586,7 +587,7 @@
                         <div class="product-img" style="background-image:url('./assets/img/binding_wire.png')"></div>
                         <div class="p-3">
                             <h5>Binding Wire & Accessories</h5>
-                            <p>Essential for reinforcement work in construction. They help secure steel bars firmly during concrete casting.</p>
+                            <p>Essential construction accessories for securing reinforcement bars during concrete work, ensuring strength and structural integrity.</p>
                             <!-- <a href="#">ENQUIRE NOW →</a> -->
                         </div>
                     </div>
@@ -597,7 +598,7 @@
                         <div class="product-img" style="background-image:url('./assets/img/angles_channels.png')"></div>
                         <div class="p-3">
                             <h5>Angles, Channels & Beams</h5>
-                            <p>Steel sections providing structural support in construction projects. Commonly used in building frames and machinery bases.</p>
+                            <p>High-quality steel sections for structural support in buildings, industrial projects, machinery foundations, and infrastructure development.</p>
                             <!-- <a href="#">ENQUIRE NOW →</a> -->
                         </div>
                     </div>
@@ -623,42 +624,42 @@
                             <div class="choose-card">
                                 <div>🤝</div>
                                 <h6>DIRECT VENDOR SUPPLY</h6>
-                                <p>Direct supply from JSW, Tata, Vizag and BondX.</p>
+                                <p>Authorized supply from JSW Steel, Tata Steel, Vizag Steel, and BondX.</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-2">
                             <div class="choose-card">
                                 <div>🛡</div>
                                 <h6>PREMIUM QUALITY</h6>
-                                <p>Assured quality that meets global standards.</p>
+                                <p>Certified steel products that meet industry standards.</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-2">
                             <div class="choose-card">
                                 <div>📦</div>
                                 <h6>BULK STOCK</h6>
-                                <p>Large inventory to meet urgent bulk needs.</p>
+                                <p>Large inventory available for immediate and bulk requirements.</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-2">
                             <div class="choose-card">
                                 <div>🏷</div>
                                 <h6>COMPETITIVE PRICE</h6>
-                                <p>Best market prices with transparent deals.</p>
+                                <p>Best-value steel solutions with transparent pricing.</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-2">
                             <div class="choose-card">
                                 <div>🚚</div>
                                 <h6>FAST DISPATCH</h6>
-                                <p>Timely delivery with strong logistics.</p>
+                                <p>Reliable logistics and on-time delivery across Andhra Pradesh.</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-2">
                             <div class="choose-card">
                                 <div>🎧</div>
                                 <h6>TRUSTED SUPPORT</h6>
-                                <p>Dedicated support for all requirements.</p>
+                                <p>Dedicated customer support for projects of every scale.</p>
                             </div>
                         </div>
                     </div>
@@ -699,19 +700,19 @@
 
             <div class="row g-4 mt-4">
                 <div class="col-md">
-                    <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600&auto=format&fit=crop')"></div>
+                    <div class="project-img" style="background-image:url('./assets/img/1_1.png')"></div>
                 </div>
                 <div class="col-md">
-                    <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600&auto=format&fit=crop')"></div>
+                    <div class="project-img" style="background-image:url('./assets/img/2_1.png')"></div>
                 </div>
                 <div class="col-md">
-                    <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=600&auto=format&fit=crop')"></div>
+                    <div class="project-img" style="background-image:url('./assets/img/3_1.png')"></div>
                 </div>
                 <div class="col-md">
-                    <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop')"></div>
+                    <div class="project-img" style="background-image:url('./assets/img/4_1.png')"></div>
                 </div>
                 <div class="col-md">
-                    <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop')"></div>
+                    <div class="project-img" style="background-image:url('./assets/img/5_1.png')"></div>
                 </div>
             </div>
 

@@ -201,7 +201,8 @@ $popular_result = $conn->query($popular_sql);
             min-height: 410px;
             background:
                 linear-gradient(90deg, rgba(2, 11, 19, .98), rgba(2, 11, 19, .82), rgba(2, 11, 19, .25)),
-                url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop");
+                url("./assets/img/bg_1.png");
+                /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop"); */
             background-size: cover;
             background-position: center;
             color: #fff;

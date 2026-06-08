@@ -117,8 +117,8 @@
       min-height: 610px;
       background:
         linear-gradient(90deg, rgba(2, 11, 19, .98) 0%, rgba(2, 11, 19, .8) 42%, rgba(2, 11, 19, .25) 100%),
-        url("./assets/img/7.png");
-        /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop"); */
+        url("./assets/img/bg_1.png");
+      /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop"); */
       /* CHANGE THIS IMAGE: hero industrial background with R logo */
       background-size: cover;
       background-position: center;
@@ -566,7 +566,8 @@
 
           <li><a class="nav-link" href="contact.php">CONTACT</a></li>
           <a href="get_a_qoute.php">
-          <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
+            <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li>
+          </a>
         </ul>
       </div>
     </div>
@@ -584,8 +585,10 @@
           </h1>
           <div class="hero-line"></div>
           <p>
-            Rajamundry Steels has been a trusted name in the steel industry,
-            delivering quality, reliability and unmatched service for over two decades.
+            <!-- Rajamundry Steels has been a trusted name in the steel industry,
+            delivering quality, reliability and unmatched service for over two decades. -->
+
+            Founded with a vision to provide top-grade steel products, Rajahmundry Steels has grown into a premier steel trading company and a preferred supplier for contractors, builders, industrial giants, and infrastructure developers.
           </p>
           <div class="hero-buttons">
             <button class="btn-gold">OUR JOURNEY &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
@@ -645,7 +648,7 @@
           <div class="quote-card">
             <div class="quote">“</div>
             <p>
-              Our mission is to strengthen every structure with the finest steel and the strongest commitment.
+              Our Mission: To strengthen every structure with the finest quality steel and the strongest commitment to delivery and excellence.
             </p>
             <div class="hero-line"></div>
             <div class="sign">Swamy</div>
@@ -670,35 +673,35 @@
               <div class="circle"><i class="fa-regular fa-building"></i></div>
               <h4>1963</h4>
               <h6>THE BEGINNING</h6>
-              <p>Started as a small steel trading firm with a big vision and strong values.</p>
+              <p>Started as a local steel trading firm with a big vision, rooted in strong core values.</p>
             </div>
 
             <div class="time-item">
               <div class="circle"><i class="fa-solid fa-arrow-trend-up"></i></div>
               <h4>1983</h4>
               <h6>STEADY GROWTH</h6>
-              <p>Expanded our product range and built long-term relationships.</p>
+              <p>Expanded our product portfolio and established a strong market presence.</p>
             </div>
 
             <div class="time-item">
               <div class="circle"><i class="fa-regular fa-handshake"></i></div>
               <h4>2003</h4>
               <h6>STRONG PARTNERSHIPS</h6>
-              <p>Became direct vendors for leading steel manufacturers.</p>
+              <p>Became direct authorized vendors and distributors for India’s leading steel manufacturers.</p>
             </div>
 
             <div class="time-item">
               <div class="circle"><i class="fa-solid fa-warehouse"></i></div>
               <h4>2020</h4>
               <h6>EXPANDING INFRASTRUCTURE</h6>
-              <p>Invested in large-scale infrastructure to handle bulk demands.</p>
+              <p>Invested in large-scale warehousing and advanced logistics to handle bulk commercial demands seamlessly.</p>
             </div>
 
             <div class="time-item">
               <div class="circle"><i class="fa-solid fa-trophy"></i></div>
               <h4>2026+</h4>
               <h6>LEADING THE FUTURE</h6>
-              <p>Continuing our legacy of trust, quality and excellence.</p>
+              <p>Continuing our rich legacy by adopting modern supply chain solutions, driven by trust, quality, and excellence.</p>
             </div>
           </div>
         </div>
@@ -720,48 +723,48 @@
             <div class="col-md-4 col-lg-2">
               <div class="value-card">
                 <i class="fa-solid fa-shield-halved"></i>
-                <h6>QUALITY</h6>
-                <p>We deliver only the highest quality steel products.</p>
+                <h6>PREMIUM QUALITY :</h6>
+                <p> We source and deliver only the highest-grade steel and TMT products that meet strict industrial standards.</p>
               </div>
             </div>
 
             <div class="col-md-4 col-lg-2">
               <div class="value-card">
                 <i class="fa-regular fa-handshake"></i>
-                <h6>INTEGRITY</h6>
-                <p>Honest practices and transparent dealings are our foundation.</p>
+                <h6>UNCOMPROMISING INTEGRITY :</h6>
+                <p> Honest business practices and 100% transparent dealings form the foundation of our company.</p>
               </div>
             </div>
 
             <div class="col-md-4 col-lg-2">
               <div class="value-card">
                 <i class="fa-regular fa-user"></i>
-                <h6>CUSTOMER FOCUS</h6>
-                <p>Our customers’ success is our top priority.</p>
+                <h6>CUSTOMER -CENTRIC FOCUS :</h6>
+                <p> Your project timelines are important to us. Our customers’ success and satisfaction are our top priorities.</p>
               </div>
             </div>
 
             <div class="col-md-4 col-lg-2">
               <div class="value-card">
                 <i class="fa-solid fa-gear"></i>
-                <h6>RELIABILITY</h6>
-                <p>You can count on us for consistent quality and delivery.</p>
+                <h6>ABSOLUTE RELIABILITY :</h6>
+                <p> Count on Rajahmundry Steels for consistent material quality and on-time site delivery, every single time.</p>
               </div>
             </div>
 
             <div class="col-md-4 col-lg-2">
               <div class="value-card">
                 <i class="fa-solid fa-users"></i>
-                <h6>TEAMWORK</h6>
-                <p>Our team works together to achieve excellence.</p>
+                <h6>EXPERT TEAMWORK :</h6>
+                <p> Our skilled team works closely with clients to understand and fulfill bulk requirements efficiently.</p>
               </div>
             </div>
 
             <div class="col-md-4 col-lg-2">
               <div class="value-card">
                 <i class="fa-solid fa-seedling"></i>
-                <h6>SUSTAINABILITY</h6>
-                <p>We are committed to responsible and sustainable growth.</p>
+                <h6>SUSTAINABILITY :</h6>
+                <p> We are committed to responsible, sustainable growth and eco-friendly practices in the steel supply chain.</p>
               </div>
             </div>
           </div>

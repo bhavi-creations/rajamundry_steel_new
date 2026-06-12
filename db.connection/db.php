@@ -8,7 +8,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
 } else {
     $user = "bhavicreations";
     $pass = "d8Az75YlgmyBnVM";
-    $db = "rajahmundrysteels";
+    $db = "rajahmundry";
 }
 
 
@@ -19,3 +19,7 @@ try {
 } catch (PDOException $e) {
     die("Could not connect to the database $db :" . $e->getMessage());
 }
+
+
+
+✔️ Home

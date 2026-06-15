@@ -871,60 +871,65 @@
     </section>
 
     <section class="network">
-        <div class="network-layout">
-            <div>
-                <small>OUR NETWORK</small>
-                <h2>Expanding To Serve<br>You Better.</h2>
-                <div class="gold-line"></div>
-                <p>
-                    We are continuously expanding our network to reach more cities and deliver premium steel solutions faster than ever.
-                </p>
-                <button class="btn-gold mt-3">
-                    BECOME A PARTNER <i class="fa-solid fa-arrow-right ms-2"></i>
-                </button>
-            </div>
+    <div class="network-layout">
 
-            <div class="india-map">
-                <i class="fa-solid fa-location-dot pin p1"></i>
-                <!-- <i class="fa-solid fa-location-dot pin p2"></i> -->
-                <i class="fa-solid fa-location-dot pin p3"></i>
-                <!-- <i class="fa-solid fa-location-dot pin p4"></i> -->
-                <i class="fa-solid fa-location-dot pin p5"></i>
+        <div>
+            <small>OUR NETWORK</small>
 
-                <div class="pin-label l1">GAJUWAKA</div>
-                <!-- <div class="pin-label l2"></div> -->
-                <div class="pin-label l3">GANNAVARAM</div>
-                <!-- <div class="pin-label l4"></div> -->
-                <div class="pin-label l5">RAJAHMUNDRY</div>
-            </div>
+            <h2>Connecting Markets.<br>Delivering Strength.</h2>
 
-            <div class="network-card">
-                <div class="net-item">
-                    <i class="fa-solid fa-globe"></i>
-                    <div>
-                        <h5>WIDE COVERAGE</h5>
-                        <p>Serving multiple states and hundreds of cities.</p>
-                    </div>
-                </div>
+            <div class="gold-line"></div>
 
-                <div class="net-item">
-                    <i class="fa-solid fa-truck"></i>
-                    <div>
-                        <h5>STRONG LOGISTICS</h5>
-                        <p>Our logistics network ensures on-time delivery every time.</p>
-                    </div>
-                </div>
+            <p>
+                Backed by a strong distribution network and decades of industry experience, we ensure reliable steel supply, faster deliveries, and seamless service across key locations in Andhra Pradesh.
+            </p>
 
-                <div class="net-item">
-                    <i class="fa-regular fa-handshake"></i>
-                    <div>
-                        <h5>CUSTOMER FIRST</h5>
-                        <p>Local support teams to assist you at every step.</p>
-                    </div>
-                </div>
-            </div>
+           <a href="contact.php"> <button class="btn-gold mt-3">
+                CONNECT WITH US <i class="fa-solid fa-arrow-right ms-2"></i>
+            </button>
+            </a>
         </div>
-    </section>
+
+        <div class="india-map">
+            <i class="fa-solid fa-location-dot pin p1"></i>
+            <i class="fa-solid fa-location-dot pin p3"></i>
+            <i class="fa-solid fa-location-dot pin p5"></i>
+
+            <div class="pin-label l1">GAJUWAKA</div>
+            <div class="pin-label l3">GANNAVARAM</div>
+            <div class="pin-label l5">RAJAHMUNDRY</div>
+        </div>
+
+        <div class="network-card">
+
+            <div class="net-item">
+                <i class="fa-solid fa-globe"></i>
+                <div>
+                    <h5>STRATEGIC LOCATIONS</h5>
+                    <p>Serving customers through key distribution centers across the region.</p>
+                </div>
+            </div>
+
+            <div class="net-item">
+                <i class="fa-solid fa-truck"></i>
+                <div>
+                    <h5>FAST DELIVERY</h5>
+                    <p>Efficient logistics ensure timely steel supply for every project.</p>
+                </div>
+            </div>
+
+            <div class="net-item">
+                <i class="fa-regular fa-handshake"></i>
+                <div>
+                    <h5>TRUSTED SUPPORT</h5>
+                    <p>Dedicated teams providing reliable service and customer assistance.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
     <section class="cta-strip">
         <h2>

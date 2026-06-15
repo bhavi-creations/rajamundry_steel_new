@@ -600,67 +600,65 @@
     </div>
   </section>
 
-  <section class="who-section">
-    <div class="container-fluid">
-      <div class="row g-0 align-items-stretch">
-        <div class="col-lg-3">
-          <div class="who-img"></div>
-        </div>
+ <section class="who-section">
+  <div class="container-fluid">
+    <div class="row g-0 align-items-stretch">
+      <div class="col-lg-3">
+        <div class="who-img"></div>
+      </div>
 
-        <div class="col-lg-6">
-          <div class="who-content">
-            <div class="section-tag">WHO WE ARE</div>
-            <h2>Building Relationships.<br>Delivering <span>Excellence.</span></h2>
-            <p>
-              Founded with a vision to provide premium quality steel products and exceptional service,
-              Rajamundry Steels has grown into a leading steel supplier with a strong market presence across India.
-            </p>
-            <p>
-              Our commitment to quality, ethical business practices and customer satisfaction has made us the preferred
-              choice for contractors, builders, industries and infrastructure developers.
-            </p>
+      <div class="col-lg-6">
+        <div class="who-content">
+          <div class="section-tag">WHO WE ARE</div>
+          <h2>Building Strength.<br>Creating Trust.<br>Delivering <span>Excellence.</span></h2>
+          <p>
+            With over 60 years of excellence in the steel industry, Rajamundry Steels has established itself as a trusted name for premium-quality steel products and reliable supply solutions.
+          </p>
+          <p>
+            Built on integrity, quality, and customer commitment, we proudly serve contractors, builders, industries, and infrastructure developers with durable steel solutions that support stronger structures and long-lasting growth.
+          </p>
 
-            <div class="stat-row">
-              <div class="mini-stat">
-                <i class="fa-solid fa-award"></i>
-                <h3>60+</h3>
-                <small>YEARS OF<br>EXPERIENCE</small>
-              </div>
-              <div class="mini-stat">
-                <i class="fa-solid fa-users"></i>
-                <h3>1000+</h3>
-                <small>HAPPY<br>CLIENTS</small>
-              </div>
-              <div class="mini-stat">
-                <i class="fa-solid fa-truck"></i>
-                <h3>5000+</h3>
-                <small>SUCCESSFUL<br>DELIVERIES</small>
-              </div>
-              <div class="mini-stat">
-                <i class="fa-regular fa-handshake"></i>
-                <h3>4+</h3>
-                <small>DIRECT VENDOR<br>PARTNERS</small>
-              </div>
+          <div class="stat-row">
+            <div class="mini-stat">
+              <i class="fa-solid fa-award"></i>
+              <h3>60+</h3>
+              <small>YEARS OF<br>EXCELLENCE</small>
+            </div>
+            <div class="mini-stat">
+              <i class="fa-solid fa-users"></i>
+              <h3>1000+</h3>
+              <small>SATISFIED<br>CLIENTS</small>
+            </div>
+            <div class="mini-stat">
+              <i class="fa-solid fa-truck"></i>
+              <h3>5000+</h3>
+              <small>SUCCESSFUL<br>DELIVERIES</small>
+            </div>
+            <div class="mini-stat">
+              <i class="fa-solid fa-industry"></i>
+              <h3>4+</h3>
+              <small>TRUSTED STEEL<br>BRAND PARTNERS</small>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 d-flex align-items-center justify-content-center p-4">
-          <div class="quote-card">
-            <div class="quote">“</div>
-            <p>
-              Our Mission: To strengthen every structure with the finest quality steel and the strongest commitment to delivery and excellence.
-            </p>
-            <div class="hero-line"></div>
-            <div class="sign">Swamy</div>
-            <small>FOUNDER</small>
-          </div>
+      <div class="col-lg-3 d-flex align-items-center justify-content-center p-4">
+        <div class="quote-card">
+          <div class="quote">“</div>
+          <p>
+            Our mission is to deliver premium-quality steel products with trust, timely supply, and a strong commitment to excellence in every project.
+          </p>
+          <div class="hero-line"></div>
+          <div class="sign">Swamy</div>
+          <small>FOUNDER</small>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="journey">
+  <!-- <section class="journey">
     <div class="container-fluid px-lg-5">
       <div class="row align-items-center">
         <div class="col-lg-3 mb-5 mb-lg-0">
@@ -708,9 +706,66 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="values">
+<section class="journey">
+  <div class="container-fluid px-lg-5">
+    <div class="row align-items-center">
+      <div class="col-lg-3 mb-5 mb-lg-0">
+        <div class="section-tag">OUR JOURNEY</div>
+        <h2>Six Decades Of Excellence<br>In The Steel Industry</h2>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="timeline">
+
+          <div class="time-item">
+            <div class="circle"><i class="fa-regular fa-building"></i></div>
+            <h4>1963</h4>
+            <h6>THE FOUNDATION</h6>
+            <p>Established with a vision to supply quality steel products and build lasting customer relationships through trust and reliability.</p>
+          </div>
+
+          <div class="time-item">
+            <div class="circle"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <h4>1985</h4>
+            <h6>EXPANDING HORIZONS</h6>
+            <p>Strengthened our presence across the region by expanding product offerings and serving growing construction and industrial sectors.</p>
+          </div>
+
+          <div class="time-item">
+            <div class="circle"><i class="fa-regular fa-handshake"></i></div>
+            <h4>2000</h4>
+            <h6>TRUSTED PARTNERSHIPS</h6>
+            <p>Built strong alliances with leading steel manufacturers, becoming a preferred supplier for contractors, builders, and industries.</p>
+          </div>
+
+          <div class="time-item">
+            <div class="circle"><i class="fa-solid fa-warehouse"></i></div>
+            <h4>2015</h4>
+            <h6>MODERN INFRASTRUCTURE</h6>
+            <p>Enhanced warehousing capabilities and logistics operations to ensure faster deliveries and efficient inventory management.</p>
+          </div>
+
+          <div class="time-item">
+            <div class="circle"><i class="fa-solid fa-trophy"></i></div>
+            <h4>2026+</h4>
+            <h6>BUILDING THE FUTURE</h6>
+            <p>Continuing our 60+ year legacy by delivering premium steel solutions, embracing innovation, and contributing to stronger infrastructure for generations to come.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!--<section class="values">
     <div class="container-fluid px-lg-5">
       <div class="row align-items-center g-4">
         <div class="col-lg-3 values-title">
@@ -729,7 +784,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-lg-2">
+            <div class="col-md-4 col-lg-3">
               <div class="value-card">
                 <i class="fa-regular fa-handshake"></i>
                 <h6>UNCOMPROMISING INTEGRITY :</h6>
@@ -761,19 +816,80 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-lg-2">
+             <div class="col-md-4 col-lg-2">
               <div class="value-card">
                 <i class="fa-solid fa-seedling"></i>
                 <h6>SUSTAINABILITY :</h6>
                 <p> We are committed to responsible, sustainable growth and eco-friendly practices in the steel supply chain.</p>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
 
       </div>
     </div>
-  </section>
+  </section>-->
+
+
+<section class="values">
+  <div class="container-fluid px-lg-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-3 values-title">
+        <div class="section-tag">OUR VALUES</div>
+        <h2>The Principles That<br>Define Us</h2>
+        <div class="hero-line"></div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="row g-3">
+          <div class="col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h6>PREMIUM QUALITY</h6>
+              <p>We deliver high-grade steel products that meet strong standards of strength, durability and performance.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3">
+            <div class="value-card">
+              <i class="fa-regular fa-handshake"></i>
+              <h6>BUSINESS INTEGRITY</h6>
+              <p>Our relationships are built on honest dealings, transparent pricing and ethical business practices.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="fa-regular fa-user"></i>
+              <h6>CUSTOMER COMMITMENT</h6>
+              <p>We understand every project requirement and provide dependable steel solutions with dedicated support.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h6>ON-TIME DELIVERY</h6>
+              <p>With strong supply and logistics support, we ensure timely delivery for construction and industrial needs.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3">
+            <div class="value-card">
+              <i class="fa-solid fa-users-gear"></i>
+              <h6>INDUSTRY EXPERTISE</h6>
+              <p>Backed by 60+ years of experience, our team helps clients choose the right steel for every project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
 
   <section class="cta">
     <div class="container-fluid px-lg-5">

@@ -607,39 +607,42 @@
     </nav>
 
     <section class="products-hero">
-        <div class="container-fluid px-lg-5">
-            <div class="col-lg-6">
-                <div class="hero-label">OUR PRODUCTS</div>
-                <h1>
-                    Premium Steel.<br>
-                    <span>Endless Possibilities.</span>
-                </h1>
-                <div class="gold-line"></div>
-                <p>
-                    As a leading industrial steel supplier, we offer a comprehensive range of high-quality steel products sourced directly from trusted manufacturers. We ensure ultimate strength, durability, and superior performance for every construction, engineering, and manufacturing application.
-                </p>
+    <div class="container-fluid px-lg-5">
+        <div class="col-lg-6">
+            <div class="hero-label">OUR PRODUCTS</div>
+            <h1>
+                Quality Steel.<br>
+                <span>Built For Every Project.</span>
+            </h1>
+            <div class="gold-line"></div>
+            <p>
+                With over 60 years of industry expertise, we supply a comprehensive range of premium steel products designed to meet the demands of construction, infrastructure, engineering, and industrial applications. Sourced from India's most trusted manufacturers, our products deliver exceptional strength, durability, and long-term performance.
+            </p>
 
-                <div class="hero-features pb-5">
-                    <div class="hero-feature">
-                        <i class="fa-solid fa-award"></i>
-                        <h6>SUPERIOR<br>QUALITY</h6>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <h6>CERTIFIED<br>STANDARDS</h6>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                        <h6>LARGE STOCK<br>AVAILABILITY</h6>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fa-solid fa-truck"></i>
-                        <h6>ON TIME<br>DELIVERY</h6>
-                    </div>
+            <div class="hero-features pb-5">
+                <div class="hero-feature">
+                    <i class="fa-solid fa-award"></i>
+                    <h6>PREMIUM<br>QUALITY</h6>
+                </div>
+
+                <div class="hero-feature">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h6>TRUSTED<br>BRANDS</h6>
+                </div>
+
+                <div class="hero-feature">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <h6>WIDE PRODUCT<br>RANGE</h6>
+                </div>
+
+                <div class="hero-feature">
+                    <i class="fa-solid fa-truck"></i>
+                    <h6>FAST & RELIABLE<br>DELIVERY</h6>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="products-section">
         <div class="section-center">
@@ -747,55 +750,54 @@
         </div>
     </section>
 
-    <section class="commitment">
-        <div class="commitment-layout">
-            <div class="commit-img"></div>
+   <section class="commitment">
+    <div class="commitment-layout">
+        <div class="commit-img"></div>
 
-            <div>
-                <small>OUR COMMITMENT</small>
-                <h2>Quality Steel. Reliable Supply.<br>Stronger Tomorrow.</h2>
-                <div class="gold-line"></div>
-                <p>
-                    We are committed to delivering premium quality steel products with consistency,
-                    reliability and trust.
-                </p>
+        <div>
+            <small>OUR COMMITMENT</small>
+            <h2>Delivering Strength.<br>Building Trust.<br>Creating Value.</h2>
+            <div class="gold-line"></div>
+            <p>
+                For over six decades, we have remained committed to supplying premium-quality steel products backed by reliability, integrity, and exceptional customer service. Our focus is to support every project with the right materials, timely delivery, and uncompromising quality standards.
+            </p>
+        </div>
+
+        <div class="commit-stats">
+            <div class="commit-stat">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                    <h3>5000+</h3>
+                    <p>Successful Deliveries</p>
+                </div>
             </div>
 
-            <div class="commit-stats">
-                <div class="commit-stat">
-                    <i class="fa-solid fa-award"></i>
-                    <div>
-                        <h3>5000+</h3>
-                        <p>Successful Deliveries</p>
-                    </div>
+            <div class="commit-stat">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <h3>1000+</h3>
+                    <p>Satisfied Clients</p>
                 </div>
+            </div>
 
-                <div class="commit-stat">
-                    <i class="fa-solid fa-users"></i>
-                    <div>
-                        <h3>1000+</h3>
-                        <p>Happy Clients</p>
-                    </div>
+            <div class="commit-stat">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h3>60+</h3>
+                    <p>Years of Excellence</p>
                 </div>
+            </div>
 
-                <div class="commit-stat">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <div>
-                        <h3>25+</h3>
-                        <p>Years of Experience</p>
-                    </div>
-                </div>
-
-                <div class="commit-stat">
-                    <i class="fa-solid fa-truck"></i>
-                    <div>
-                        <h3>4+</h3>
-                        <p>Direct Vendor Partners</p>
-                    </div>
+            <div class="commit-stat">
+                <i class="fa-solid fa-handshake"></i>
+                <div>
+                    <h3>4+</h3>
+                    <p>Trusted Brand Partners</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="cta-strip">
         <h2>
@@ -809,7 +811,7 @@
         </p>
 
         <div class="cta-actions">
-            <button class="btn-gold">REQUEST A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button>
+           <a href="get_a_qoute.php"> <button class="btn-gold">REQUEST A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button></a>
             <a href="https://wa.me/919652239999" target="_blank"> <button class="btn-outline-gold">
                     <i class="fa-brands fa-whatsapp text-warning me-2"></i> CHAT ON WHATSAPP
                 </button></a>

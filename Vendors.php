@@ -689,113 +689,106 @@
     </div>
   </section>
 
-  <section class="vendors-section">
-    <div class="section-center">
-      <small>OUR TRUSTED VENDOR PARTNERS</small>
-      <h2>We Work With The Best, To Deliver The Best.</h2>
-    </div>
+ <section class="vendors-section">
+  <div class="section-center">
+    <small>OUR TRUSTED VENDOR PARTNERS</small>
+    <h2>We Partner With Trusted Steel Brands To Deliver Quality You Can Rely On.</h2>
+  </div>
 
-    <div class="vendor-grid row">
+  <div class="vendor-grid row">
 
-
-
-      <div class="vendor-card">
-        <div class="vendor-img" style="background-image:url('./assets/img/1.png')">
-          <div class="vendor-logo">JSW</div>
-        </div>
-        <div class="vendor-content">
-          <h3>JSW STEEL</h3>
-          <p>India’s leading steel manufacturer, known for innovation, quality and sustainable steel solutions.</p>
-          <div class="vendor-list">
-            <div><i class="fa-regular fa-circle-check"></i> Wide range of steel products</div>
-            <div><i class="fa-regular fa-circle-check"></i> Advanced manufacturing</div>
-            <div><i class="fa-regular fa-circle-check"></i> Sustainable practices</div>
-          </div>
-          <!-- <a class="know" href="#">KNOW MORE <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-        </div>
+    <div class="vendor-card">
+      <div class="vendor-img" style="background-image:url('./assets/img/1.png')">
+        <div class="vendor-logo">JSW</div>
       </div>
-
-      <div class="vendor-card">
-        <div class="vendor-img" style="background-image:url('./assets/img/2.png')">
-          <div class="vendor-logo tata">TATA</div>
-        </div>
-        <div class="vendor-content">
-          <h3>TATA STEEL</h3>
-          <p>A globally trusted brand delivering high-quality steel with unmatched strength and durability.</p>
-          <div class="vendor-list">
-            <div><i class="fa-regular fa-circle-check"></i> High strength & durability</div>
-            <div><i class="fa-regular fa-circle-check"></i> Global quality standards</div>
-            <div><i class="fa-regular fa-circle-check"></i> Customer-centric solutions</div>
-          </div>
-          <!-- <a class="know" href="#">KNOW MORE <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-        </div>
-      </div>
-
-      <div class="vendor-card">
-        <div class="vendor-img" style="background-image:url('./assets/img/3.png')">
-          <div class="vendor-logo vizag">VIZAG</div>
-        </div>
-        <div class="vendor-content">
-          <h3>VIZAG STEEL</h3>
-          <p>Pride of India. Known for its superior quality steel and contribution to nation-building.</p>
-          <div class="vendor-list">
-            <div><i class="fa-regular fa-circle-check"></i> Government owned</div>
-            <div><i class="fa-regular fa-circle-check"></i> High-quality steel products</div>
-            <div><i class="fa-regular fa-circle-check"></i> Trusted for decades</div>
-          </div>
-          <!-- <a class="know" href="#">KNOW MORE <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-        </div>
-      </div>
-
-      <div class="vendor-card">
-        <div class="vendor-img" style="background-image:url('./assets/img/4.png')">
-          <div class="vendor-logo bondx">BONDX</div>
-        </div>
-        <div class="vendor-content">
-          <h3>BONDX STEEL</h3>
-          <p>Next-generation steel solutions crafted for modern construction and industrial needs.</p>
-          <div class="vendor-list">
-            <div><i class="fa-regular fa-circle-check"></i> Advanced steel technology</div>
-            <div><i class="fa-regular fa-circle-check"></i> Consistent quality</div>
-            <div><i class="fa-regular fa-circle-check"></i> Built for tomorrow</div>
-          </div>
-          <!-- <a class="know" href="#">KNOW MORE <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-        </div>
-      </div>
-
-      <div class="vendor-card">
-        <div class="vendor-img" style="background-image:url('./assets/img/5.png')">
-          <div class="vendor-logo bondx">BEEKAY</div>
-        </div>
-        <div class="vendor-content">
-          <h3>BEEKAY STEEL</h3>
-          <p>Reliable steel solutions engineered for strength, performance, and sustainable growth across diverse industries.</p>
-          <div class="vendor-list">
-            <div><i class="fa-regular fa-circle-check"></i> Premium steel manufacturing</div>
-            <div><i class="fa-regular fa-circle-check"></i> Trusted quality standards</div>
-            <div><i class="fa-regular fa-circle-check"></i> Driving industrial progress</div>
-          </div>
-          <!-- <a class="know" href="#">KNOW MORE <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-        </div>
-      </div>
-
-      <div class="vendor-card">
-        <div class="vendor-img" style="background-image:url('./assets/img/6.png')">
-          <div class="vendor-logo bondx">Simhadri</div>
-        </div>
-        <div class="vendor-content">
-          <h3>Simhadri STEEL</h3>
-          <p>High-quality steel products designed to support modern infrastructure, construction, and engineering excellence.</p>
-          <div class="vendor-list">
-            <div><i class="fa-regular fa-circle-check"></i> Durable steel solutions</div>
-            <div><i class="fa-regular fa-circle-check"></i> Consistent product quality</div>
-            <div><i class="fa-regular fa-circle-check"></i>Powering future development</div>
-          </div>
-          <!-- <a class="know" href="#">KNOW MORE <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
+      <div class="vendor-content">
+        <h3>JSW STEEL</h3>
+        <p>One of India’s leading steel brands, known for advanced technology, premium quality, and reliable steel solutions.</p>
+        <div class="vendor-list">
+          <div><i class="fa-regular fa-circle-check"></i> Premium steel products</div>
+          <div><i class="fa-regular fa-circle-check"></i> Modern manufacturing standards</div>
+          <div><i class="fa-regular fa-circle-check"></i> Trusted across industries</div>
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="vendor-card">
+      <div class="vendor-img" style="background-image:url('./assets/img/2.png')">
+        <div class="vendor-logo tata">TATA</div>
+      </div>
+      <div class="vendor-content">
+        <h3>TATA STEEL</h3>
+        <p>A globally respected steel manufacturer delivering strength, durability, and consistent quality for every project.</p>
+        <div class="vendor-list">
+          <div><i class="fa-regular fa-circle-check"></i> High-strength steel</div>
+          <div><i class="fa-regular fa-circle-check"></i> Global quality standards</div>
+          <div><i class="fa-regular fa-circle-check"></i> Reliable performance</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-img" style="background-image:url('./assets/img/3.png')">
+        <div class="vendor-logo vizag">VIZAG</div>
+      </div>
+      <div class="vendor-content">
+        <h3>VIZAG STEEL</h3>
+        <p>A trusted name in Indian steel, recognized for quality products that support construction and infrastructure growth.</p>
+        <div class="vendor-list">
+          <div><i class="fa-regular fa-circle-check"></i> Trusted Indian steel brand</div>
+          <div><i class="fa-regular fa-circle-check"></i> Strong product reliability</div>
+          <div><i class="fa-regular fa-circle-check"></i> Ideal for infrastructure needs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-img" style="background-image:url('./assets/img/4.png')">
+        <div class="vendor-logo bondx">BONDX</div>
+      </div>
+      <div class="vendor-content">
+        <h3>BONDX STEEL</h3>
+        <p>Modern steel solutions designed to meet the evolving needs of construction, fabrication, and industrial projects.</p>
+        <div class="vendor-list">
+          <div><i class="fa-regular fa-circle-check"></i> Advanced steel solutions</div>
+          <div><i class="fa-regular fa-circle-check"></i> Consistent material quality</div>
+          <div><i class="fa-regular fa-circle-check"></i> Built for modern projects</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-img" style="background-image:url('./assets/img/5.png')">
+        <div class="vendor-logo bondx">BEEKAY</div>
+      </div>
+      <div class="vendor-content">
+        <h3>BEEKAY STEEL</h3>
+        <p>Reliable steel products engineered for strength, performance, and long-term value across diverse industries.</p>
+        <div class="vendor-list">
+          <div><i class="fa-regular fa-circle-check"></i> Quality steel manufacturing</div>
+          <div><i class="fa-regular fa-circle-check"></i> Durable product range</div>
+          <div><i class="fa-regular fa-circle-check"></i> Industrial-grade performance</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vendor-card">
+      <div class="vendor-img" style="background-image:url('./assets/img/6.png')">
+        <div class="vendor-logo bondx">SIMHADRI</div>
+      </div>
+      <div class="vendor-content">
+        <h3>SIMHADRI STEEL</h3>
+        <p>Dependable steel solutions crafted to support construction, engineering, and infrastructure development.</p>
+        <div class="vendor-list">
+          <div><i class="fa-regular fa-circle-check"></i> Durable steel products</div>
+          <div><i class="fa-regular fa-circle-check"></i> Consistent supply support</div>
+          <div><i class="fa-regular fa-circle-check"></i> Strength for future projects</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <section class="vendor-stats">
     <div class="v-stat"><i class="fa-solid fa-cubes"></i>
@@ -830,50 +823,67 @@
   </section>
 
   <section class="vendor-network">
-    <div class="network-layout">
-      <div class="network-text">
-        <small>STRONG PARTNERSHIPS. STRONGER SUPPLY CHAIN.</small>
-        <h2>Direct Vendor Network.<br>Maximum Value For You.</h2>
-        <div class="gold-line"></div>
-        <p>Our strong relationships with top steel manufacturers allow us to offer competitive pricing, assured quality and uninterrupted supply for all your projects.</p>
-        <div class="network-list">
-          <div><i class="fa-regular fa-circle-check"></i> Better pricing advantage</div>
-          <div><i class="fa-regular fa-circle-check"></i> Priority allocation</div>
-          <div><i class="fa-regular fa-circle-check"></i> Consistent product availability</div>
-          <div><i class="fa-regular fa-circle-check"></i> Technical support & assurance</div>
-        </div>
-      </div>
+  <div class="network-layout">
 
-      <div class="handshake-img"></div>
+    <div class="network-text">
+      <small>TRUSTED PARTNERSHIPS. RELIABLE SUPPLY.</small>
 
-      <div class="dark-stats">
-        <div class="dark-stat"><i class="fa-solid fa-cubes"></i>
-          <div>
-            <h3>60+</h3>
-            <p>Years Of Experience</p>
-          </div>
-        </div>
-        <div class="dark-stat"><i class="fa-regular fa-handshake"></i>
-          <div>
-            <h3>4+</h3>
-            <p>Vendor Partners</p>
-          </div>
-        </div>
-        <div class="dark-stat"><i class="fa-solid fa-truck"></i>
-          <div>
-            <h3>5000+</h3>
-            <p>Deliveries Completed</p>
-          </div>
-        </div>
-        <div class="dark-stat"><i class="fa-solid fa-globe"></i>
-          <div>
-            <h3>Pan India</h3>
-            <p>Supply Network</p>
-          </div>
-        </div>
+      <h2>Strong Vendor Network.<br>Reliable Steel Solutions.</h2>
+
+      <div class="gold-line"></div>
+
+      <p>
+        Our partnerships with leading steel manufacturers help us deliver premium-quality products, dependable supply, and exceptional value for every project.
+      </p>
+
+      <div class="network-list">
+        <div><i class="fa-regular fa-circle-check"></i> Leading steel brands</div>
+        <div><i class="fa-regular fa-circle-check"></i> Assured product quality</div>
+        <div><i class="fa-regular fa-circle-check"></i> Consistent availability</div>
+        <div><i class="fa-regular fa-circle-check"></i> Timely delivery support</div>
       </div>
     </div>
-  </section>
+
+    <div class="handshake-img"></div>
+
+    <div class="dark-stats">
+
+      <div class="dark-stat">
+        <i class="fa-solid fa-cubes"></i>
+        <div>
+          <h3>60+</h3>
+          <p>Years Of Excellence</p>
+        </div>
+      </div>
+
+      <div class="dark-stat">
+        <i class="fa-regular fa-handshake"></i>
+        <div>
+          <h3>6+</h3>
+          <p>Vendor Partners</p>
+        </div>
+      </div>
+
+      <div class="dark-stat">
+        <i class="fa-solid fa-truck"></i>
+        <div>
+          <h3>5000+</h3>
+          <p>Deliveries Completed</p>
+        </div>
+      </div>
+
+      <div class="dark-stat">
+        <i class="fa-solid fa-users"></i>
+        <div>
+          <h3>1000+</h3>
+          <p>Satisfied Clients</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
   <section class="cta-strip">
     <div class="cta-left">

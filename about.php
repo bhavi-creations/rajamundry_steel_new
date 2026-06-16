@@ -175,7 +175,7 @@
 
     .who-img {
       min-height: 455px;
-      background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop");
+      background: url("./assets/img/about_sideimg.png");
       /* CHANGE THIS IMAGE: Rajamundry Steels building */
       background-size: cover;
       background-position: center;

@@ -668,7 +668,7 @@
                 </div>
             </div>
 
-            <div class="infra row mt-5 align-items-center">
+            <!-- <div class="infra row mt-5 align-items-center">
                 <div class="col-lg-4">
                     <h2>BUILT FOR LARGE SCALE<br>STEEL SUPPLY</h2>
                     <p class="text-light">Our strong infrastructure and vast stock capacity enable us to handle bulk orders and deliver across regions with efficiency.</p>
@@ -691,7 +691,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 

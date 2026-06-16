@@ -508,104 +508,147 @@
 
 
 
-/* new stylings  */
-.process{
-    padding:80px 20px;
-    text-align:center;
-    background:#f8f9fa;
-}
+        /* new stylings  */
+        .process {
+            padding: 80px 20px;
+            text-align: center;
+            background: #f8f9fa;
+        }
 
-.process small{
-    color:#c9a227;
-    font-weight:600;
-    letter-spacing:2px;
-}
+        .process small {
+            color: #c9a227;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
 
-.process h2{
-    font-size:42px;
-    font-weight:700;
-    margin:15px 0;
-}
+        .process h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin: 15px 0;
+        }
 
-.steps{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-    margin-top:60px;
-}
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 60px;
+        }
 
-.step{
-    background:#fff;
-    padding:35px 25px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-    transition:.4s ease;
-    position:relative;
-    height:100%;
-}
+        .step {
+            background: #fff;
+            padding: 35px 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: .4s ease;
+            position: relative;
+            height: 100%;
+        }
 
-.step:hover{
-    transform:translateY(-10px);
-}
+        .step:hover {
+            transform: translateY(-10px);
+        }
 
-.step-icon{
-    width:90px;
-    height:90px;
-    margin:0 auto 25px;
-    border-radius:50%;
-    background:#0f172a;
-    color:#c9a227;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:32px;
-    position:relative;
-}
+        .step-icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            background: #0f172a;
+            color: #c9a227;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            position: relative;
+        }
 
-.step-num{
-    position:absolute;
-    right:-8px;
-    top:-8px;
-    width:32px;
-    height:32px;
-    border-radius:50%;
-    background:#c9a227;
-    color:#fff;
-    font-size:14px;
-    font-weight:700;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
+        .step-num {
+            position: absolute;
+            right: -8px;
+            top: -8px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #c9a227;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.step h5{
-    font-size:18px;
-    font-weight:700;
-    margin-bottom:15px;
-}
+        .step h5 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
 
-.step p{
-    color:#666;
-    line-height:1.7;
-    margin:0;
-}
+        .step p {
+            color: #666;
+            line-height: 1.7;
+            margin: 0;
+        }
 
-@media(max-width:991px){
-    .steps{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
+        @media(max-width:991px) {
+            .steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-@media(max-width:576px){
-    .steps{
-        grid-template-columns:1fr;
-    }
+        @media(max-width:576px) {
+            .steps {
+                grid-template-columns: 1fr;
+            }
 
-    .process h2{
-        font-size:30px;
-    }
-}
+            .process h2 {
+                font-size: 30px;
+            }
+        }
 
+
+
+
+
+        /* contact form   */
+
+        .contact_section_form {
+            width: 100%;
+        }
+
+        .contact_section_group {
+            margin-bottom: 15px;
+        }
+
+        .contact_section_input,
+        .contact_section_textarea {
+            width: 100%;
+            padding: 14px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .contact_section_input:focus,
+        .contact_section_textarea:focus {
+            border-color: #c89b3c;
+        }
+
+        .contact_section_btn {
+            background: #c89b3c;
+            color: #fff;
+            border: none;
+            padding: 14px 35px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .contact_section_btn:hover {
+            opacity: 0.9;
+        }
     </style>
 </head>
 
@@ -673,7 +716,7 @@
                         <div class="gold-line"></div>
                         <p>Fill in your requirements and we will get back to you with the best quote.</p>
 
-                        <form  action="send_quote.php" method="POST">
+                        <!-- <form  action="send_quote.php" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Full Name <span>*</span></label>
@@ -687,44 +730,6 @@
                                     <label class="form-label">Email Address <span>*</span></label>
                                     <input class="form-control" placeholder="Enter your email">
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Company / Organization</label>
-                                    <input class="form-control" placeholder="Enter company name">
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label">Project Location <span>*</span></label>
-                                    <select class="form-select">
-                                        <option>Select project location</option>
-                                        <option>Rajahmundry</option>
-                                        <option>Gannavaram</option>
-                                        <option>Gajuwaka</option>
-                                        <!-- <option>Hyderabad</option> -->
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Product Required <span>*</span></label>
-                                    <select class="form-select">
-                                        <option>Select product</option>
-                                        <option>TMT Bars</option>
-                                        <option>Structural Steel</option>
-                                        <option>MS Pipes</option>
-                                        <option>Steel Sheets</option>
-                                        <option>Binding Wire & Accessories</option>
-
-                                        </option>Angles, Channels & Beam</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4">
-                                    <label class="form-label">Quantity <span>*</span></label>
-                                    <input class="form-control" placeholder="Enter quantity">
-                                </div>
-                                <div class="col-md-2">
-                                    <label class="form-label">&nbsp;</label>
-                                    <select class="form-select">
-                                        <option>MT</option>
-                                        <option>KG</option>
-                                    </select>
-                                </div>
                                 <div class="col-12">
                                     <label class="form-label">Requirement Details</label>
                                     <textarea class="form-control" placeholder="Please provide more details about your requirement"></textarea>
@@ -733,7 +738,47 @@
                                     <button class="btn-gold w-100">SUBMIT REQUEST <i class="fa-solid fa-arrow-right ms-2"></i></button>
                                 </div>
                             </div>
+                        </form> -->
+
+                        <form class="contact_section_form" action="send_mail.php" method="POST">
+
+                            <div class="contact_section_group">
+                                <input type="text" name="name" class="contact_section_input" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="contact_section_group">
+                                <input type="email" name="email" class="contact_section_input" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="contact_section_group">
+                                <input type="text" name="phone" class="contact_section_input" placeholder="Phone Number" required>
+                            </div>
+
+                            <div class="contact_section_group">
+                                <select name="service" class="contact_section_input" required>
+                                    <option value="">Select Service</option>
+                                    <option value="TMT Bars">TMT Bars</option>
+                                    <option value="Structural Steel">Structural Steel</option>
+                                    <option value="MS Pipes">MS Pipes</option>
+                                    <option value="Steel Sheets">Steel Sheets</option>
+                                    <option value="Angles & Channels">Angles & Channels</option>
+                                </select>
+                            </div>
+
+                            <div class="contact_section_group">
+                                <textarea name="message" class="contact_section_textarea" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+
+                            <button type="submit" class="contact_section_btn">
+                                Submit Enquiry
+                            </button>
+
                         </form>
+
+
+
+
+
                         <div class="secure"><i class="fa-solid fa-lock text-warning"></i> Your information is secure and will not be shared.</div>
                     </div>
                 </div>
@@ -769,50 +814,50 @@
     </section>
 
     <section class="process">
-    <small>OUR PROCESS</small>
-    <h2>Simple. Efficient. Reliable.</h2>
-    <div class="r-line">──── R ────</div>
+        <small>OUR PROCESS</small>
+        <h2>Simple. Efficient. Reliable.</h2>
+        <div class="r-line">──── R ────</div>
 
-    <div class="steps">
+        <div class="steps">
 
-        <div class="step">
-            <div class="step-icon">
-                <i class="fa-regular fa-clipboard"></i>
-                <div class="step-num">01</div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <div class="step-num">01</div>
+                </div>
+                <h5>SHARE YOUR REQUIREMENT</h5>
+                <p>Tell us about your steel requirements, project details, and quantity needs through our enquiry form.</p>
             </div>
-            <h5>SHARE YOUR REQUIREMENT</h5>
-            <p>Tell us about your steel requirements, project details, and quantity needs through our enquiry form.</p>
-        </div>
 
-        <div class="step">
-            <div class="step-icon">
-                <i class="fa-solid fa-headset"></i>
-                <div class="step-num">02</div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="step-num">02</div>
+                </div>
+                <h5>EXPERT CONSULTATION</h5>
+                <p>Our team reviews your requirements and recommends the most suitable steel products for your project.</p>
             </div>
-            <h5>EXPERT CONSULTATION</h5>
-            <p>Our team reviews your requirements and recommends the most suitable steel products for your project.</p>
-        </div>
 
-        <div class="step">
-            <div class="step-icon">
-                <i class="fa-regular fa-file-lines"></i>
-                <div class="step-num">03</div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <div class="step-num">03</div>
+                </div>
+                <h5>CUSTOMIZED QUOTATION</h5>
+                <p>Receive a competitive quotation with product specifications, pricing, and delivery schedules.</p>
             </div>
-            <h5>CUSTOMIZED QUOTATION</h5>
-            <p>Receive a competitive quotation with product specifications, pricing, and delivery schedules.</p>
-        </div>
 
-        <div class="step">
-            <div class="step-icon">
-                <i class="fa-regular fa-handshake"></i>
-                <div class="step-num">04</div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fa-regular fa-handshake"></i>
+                    <div class="step-num">04</div>
+                </div>
+                <h5>SUPPLY & DELIVERY</h5>
+                <p>Upon confirmation, we ensure quality-assured steel supply and timely delivery to your project location.</p>
             </div>
-            <h5>SUPPLY & DELIVERY</h5>
-            <p>Upon confirmation, we ensure quality-assured steel supply and timely delivery to your project location.</p>
-        </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
     <section class="cta-box">
         <div class="cta-left">
@@ -824,7 +869,7 @@
         </div>
 
         <div class="cta-actions">
-            <button class="btn-gold"><i class="fa-solid fa-phone me-2"></i> CALL US NOW <i class="fa-solid fa-arrow-right ms-2"></i></button>
+         <a href="contact.php"> <button class="btn-gold"><i class="fa-solid fa-phone me-2"></i> CALL US NOW <i class="fa-solid fa-arrow-right ms-2"></i></button></a> 
             <a href="https://wa.me/919652239999" target="_blank"> <button class="btn-outline-gold"><i class="fa-brands fa-whatsapp text-warning me-2"></i> CHAT ON WHATSAPP</button></a>
         </div>
     </section>

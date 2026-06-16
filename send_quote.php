@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPAuth   = true;
 
         $mail->Username   = 'manimalladi05@gmail.com';
-        $mail->Password   = 'YOUR_NEW_GMAIL_APP_PASSWORD';
+        $mail->Password   = 'cvarqcchfjpawxvo';
 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;

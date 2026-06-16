@@ -1,103 +1,67 @@
+```php
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/vendor/autoload.php';
+require 'vendor/autoload.php';
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if(isset($_POST['name'])){
 
-    $name        = trim($_POST['name'] ?? '');
-    $email       = trim($_POST['email'] ?? '');
-    $phone       = trim($_POST['phone'] ?? '');
-    $requirement = trim($_POST['requirement'] ?? '');
-    $message     = trim($_POST['message'] ?? '');
-
-    if ($name == '' || $email == '' || $phone == '' || $requirement == '' || $message == '') {
-        echo "<script>alert('Please fill all fields'); window.history.back();</script>";
-        exit;
-    }
-
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "<script>alert('Please enter valid email'); window.history.back();</script>";
-        exit;
-    }
-
-    $safe_name        = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
-    $safe_email       = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
-    $safe_phone       = htmlspecialchars($phone, ENT_QUOTES, 'UTF-8');
-    $safe_requirement = htmlspecialchars($requirement, ENT_QUOTES, 'UTF-8');
-    $safe_message     = nl2br(htmlspecialchars($message, ENT_QUOTES, 'UTF-8'));
+    $name    = $_POST['name'];
+    $email   = $_POST['email'];
+    $phone   = $_POST['phone'];
+    $service = $_POST['service'];
+    $message = $_POST['message'];
 
     $mail = new PHPMailer(true);
 
     try {
-        $mail->SMTPDebug = 0;
 
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
 
+        // YOUR GMAIL
         $mail->Username   = 'manimalladi05@gmail.com';
-        $mail->Password   = 'YOUR_NEW_GMAIL_APP_PASSWORD';
 
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        // YOUR APP PASSWORD
+        $mail->Password   = 'cvarqcchfjpawxvo';
+
+        $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
-        $mail->CharSet = 'UTF-8';
+        $mail->setFrom('manimalladi05@gmail.com', 'Website Enquiry');
+        $mail->addAddress('manimalladi05@gmail.com');
 
-        $mail->setFrom('manimalladi05@gmail.com', 'Rajahmundry Steels Website');
-        $mail->addAddress('manimalladi05@gmail.com', 'Rajahmundry Steels');
-        $mail->addReplyTo($safe_email, $safe_name);
+        $mail->addReplyTo($email, $name);
 
         $mail->isHTML(true);
-        $mail->Subject = 'New Steel Product Enquiry - Website';
+
+        $mail->Subject = "New Website Enquiry";
 
         $mail->Body = "
-            <h2>New Steel Product Enquiry</h2>
-            <table border='1' cellpadding='10' cellspacing='0' style='border-collapse:collapse;width:100%;font-family:Arial,sans-serif;'>
-                <tr>
-                    <th align='left'>Name</th>
-                    <td>{$safe_name}</td>
-                </tr>
-                <tr>
-                    <th align='left'>Email</th>
-                    <td>{$safe_email}</td>
-                </tr>
-                <tr>
-                    <th align='left'>Phone</th>
-                    <td>{$safe_phone}</td>
-                </tr>
-                <tr>
-                    <th align='left'>Requirement</th>
-                    <td>{$safe_requirement}</td>
-                </tr>
-                <tr>
-                    <th align='left'>Message</th>
-                    <td>{$safe_message}</td>
-                </tr>
-            </table>
+        <h2>New Enquiry Received</h2>
+
+        <p><strong>Name:</strong> {$name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Phone:</strong> {$phone}</p>
+        <p><strong>Service:</strong> {$service}</p>
+        <p><strong>Message:</strong> {$message}</p>
         ";
 
-        $mail->AltBody = "
-New Steel Product Enquiry
+        $mail->send();
 
-Name: $name
-Email: $email
-Phone: $phone
-Requirement: $requirement
-Message: $message
-        ";
-
-        if ($mail->send()) {
-            echo "<script>
-                alert('Thank you! Your enquiry has been submitted successfully.');
-                window.location.href='index.php';
-            </script>";
-            exit;
-        }
+        echo "<script>
+        alert('Message Sent Successfully');
+        window.location='index.php';
+        </script>";
 
     } catch (Exception $e) {
-        echo "Mail Error: " . $mail->ErrorInfo;
+
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+
     }
 }
 ?>
+```

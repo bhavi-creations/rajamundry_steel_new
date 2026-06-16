@@ -626,6 +626,18 @@
         padding: 35px 25px
       }
     }
+
+
+.vendor-img{
+    position: relative;
+    /* height: 280px;  */
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
   </style>
 </head>
 
@@ -656,8 +668,8 @@
           <li><a class="nav-link" href="yards.php">YARDS</a></li>
 
           <li><a class="nav-link" href="contact.php">CONTACT</a></li>
-          <a></a>
-          <li><button href="get_a_qoute.php" class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
+         
+             <a href="get_a_qoute.php"> <li><button  class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
         </ul>
       </div>
     </div>

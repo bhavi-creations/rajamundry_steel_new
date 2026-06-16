@@ -330,7 +330,7 @@
 
     .quote-img {
       height: 210px;
-      background: url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=900&auto=format&fit=crop");
+      background: url("./assets/img/gallrey_3.png");
       background-size: cover;
       background-position: center;
     }
@@ -706,6 +706,51 @@
         align-items: flex-start;
       }
     }
+
+
+    /* contact form   */
+   
+.contact_section_form{
+    width:100%;
+}
+
+.contact_section_group{
+    margin-bottom:15px;
+}
+
+.contact_section_input,
+.contact_section_textarea{
+    width:100%;
+    padding:14px 15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font-size:16px;
+    outline:none;
+}
+
+.contact_section_input:focus,
+.contact_section_textarea:focus{
+    border-color:#c89b3c;
+}
+
+.contact_section_btn{
+    background:#c89b3c;
+    color:#fff;
+    border:none;
+    padding:14px 35px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.contact_section_btn:hover{
+    opacity:0.9;
+}
+
+
+
+
   </style>
 </head>
 
@@ -790,28 +835,62 @@
       <h2>We Will Get Back To You<br>As Soon As Possible!</h2>
       <div class="gold-line"></div>
 
-      <form class="form-box" action="send_mail.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
+      <!-- <form class="form-box" action="send_mail.php" method="POST">
+        <input type="text" name="contactname" placeholder="Your Name" required>
 
-        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="email" name="contactemail" placeholder="Email Address" required>
 
-        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="contactphone" placeholder="Phone Number" required>
 
-        <select name="requirement" required>
-          <option value="">Select Requirement</option>
-          <option value="TMT Bars">TMT Bars</option>
-          <option value="Structural Steel">Structural Steel</option>
-          <option value="MS Pipes">MS Pipes</option>
-          <option value="Steel Sheets">Steel Sheets</option>
-          <option value="Angles">Angles, Channels & Beam</option>
-        </select>
+       
 
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <textarea name="contactsubject" placeholder="Your Message" required></textarea>
 
         <button type="submit" class="btn-gold mt-2">
           SUBMIT MESSAGE &nbsp; <i class="fa-solid fa-arrow-right"></i>
         </button>
-      </form>
+      </form> -->
+    
+ 
+<form class="contact_section_form" action="send_mail.php" method="POST">
+
+    <div class="contact_section_group">
+        <input type="text" name="name" class="contact_section_input" placeholder="Your Name" required>
+    </div>
+
+    <div class="contact_section_group">
+        <input type="email" name="email" class="contact_section_input" placeholder="Your Email" required>
+    </div>
+
+    <div class="contact_section_group">
+        <input type="text" name="phone" class="contact_section_input" placeholder="Phone Number" required>
+    </div>
+
+    <div class="contact_section_group">
+        <select name="service" class="contact_section_input" required>
+            <option value="">Select Service</option>
+            <option value="TMT Bars">TMT Bars</option>
+            <option value="Structural Steel">Structural Steel</option>
+            <option value="MS Pipes">MS Pipes</option>
+            <option value="Steel Sheets">Steel Sheets</option>
+            <option value="Angles & Channels">Angles & Channels</option>
+        </select>
+    </div>
+
+    <div class="contact_section_group">
+        <textarea name="message" class="contact_section_textarea" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="contact_section_btn">
+        Submit Enquiry
+    </button>
+
+</form>
+
+
+    
+    
+    
     </div>
 
     <div class="info-side">

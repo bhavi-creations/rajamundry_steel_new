@@ -641,7 +641,7 @@
 
       .footer-col {
         border-left: 0;
-        padding-left: 0;
+        padding-left: 20px;
       }
 
       .contact-hero {
@@ -686,6 +686,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        margin: 20px;
       }
 
       .feature-box {
@@ -1065,7 +1066,7 @@
           </div>
         </div>
 
-        <div class="col-lg-2 offset-lg-1 footer-col">
+        <div class="col-lg-2 col-6 offset-lg-1 footer-col">
           <h6>QUICK LINKS</h6>
           <a href="index.php">Home</a>
           <a href="about.php">About Us</a>
@@ -1076,7 +1077,7 @@
           <a href="contact.php">Contact</a>
         </div>
 
-        <div class="col-lg-2 footer-col">
+        <div class="col-lg-2 col-6 footer-col">
           <h6>PRODUCTS</h6>
           <a href="Products.php">TMT Bars</a>
           <a href="Products.php">Structural Steel</a>
@@ -1086,7 +1087,7 @@
           <a href="Products.php">Industrial Steel Supply</a>
         </div>
 
-        <div class="col-lg-2 footer-col">
+        <div class="col-lg-2 col-4 footer-col">
           <h6>VENDORS</h6>
           <a href="Vendors.php">JSW Steel</a>
           <a href="Vendors.php">Tata Steel</a>
@@ -1094,7 +1095,7 @@
           <a href="Vendors.php">BondX</a>
         </div>
 
-        <div class="col-lg-2 footer-col">
+        <div class="col-lg-2 col-8 footer-col">
           <h6>CONTACT US</h6>
           <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
           <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

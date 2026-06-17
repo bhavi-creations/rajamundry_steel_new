@@ -256,7 +256,7 @@
             display: flex;
             gap: 18px;
             align-items: center;
-            border-right: 1px solid rgba(255, 255, 255, .2);
+            /* border-right: 1px solid rgba(255, 255, 255, .2); */
             padding-right: 25px;
         }
 
@@ -649,6 +649,73 @@
         .contact_section_btn:hover {
             opacity: 0.9;
         }
+
+
+        /* new styling add for mobile reaponsive */
+        @media (max-width:576px) {
+
+            .hero-icons {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .hero-icon {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 8px;
+            }
+
+            .hero-icon i {
+                margin-bottom: 8px;
+            }
+
+            .hero-icon h6 {
+                margin: 0;
+                font-size: 12px;
+                line-height: 1.4;
+            }
+
+
+
+
+
+
+
+            .benefits {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .benefit {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 12px 8px;
+            }
+
+            .benefit i {
+                margin-bottom: 8px;
+            }
+
+            .benefit h6 {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+
+            .benefit p {
+                font-size: 11px;
+                line-height: 1.4;
+                margin: 0;
+            }
+        }
     </style>
 </head>
 
@@ -779,7 +846,7 @@
 
 
 
-                        <div class="secure"><i class="fa-solid fa-lock text-warning"></i> Your information is secure and will not be shared.</div>
+                        <!-- <div class="secure"><i class="fa-solid fa-lock text-warning"></i> Your information is secure and will not be shared.</div> -->
                     </div>
                 </div>
             </div>
@@ -869,7 +936,7 @@
         </div>
 
         <div class="cta-actions">
-         <a href="contact.php"> <button class="btn-gold"><i class="fa-solid fa-phone me-2"></i> CALL US NOW <i class="fa-solid fa-arrow-right ms-2"></i></button></a> 
+            <a href="contact.php"> <button class="btn-gold"><i class="fa-solid fa-phone me-2"></i> CALL US NOW <i class="fa-solid fa-arrow-right ms-2"></i></button></a>
             <a href="https://wa.me/919652239999" target="_blank"> <button class="btn-outline-gold"><i class="fa-brands fa-whatsapp text-warning me-2"></i> CHAT ON WHATSAPP</button></a>
         </div>
     </section>

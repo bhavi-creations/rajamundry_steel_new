@@ -202,7 +202,7 @@ $popular_result = $conn->query($popular_sql);
             background:
                 linear-gradient(90deg, rgba(2, 11, 19, .98), rgba(2, 11, 19, .82), rgba(2, 11, 19, .25)),
                 url("./assets/img/bg_1.png");
-                /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop"); */
+            /* url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1800&auto=format&fit=crop"); */
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -645,8 +645,8 @@ $popular_result = $conn->query($popular_sql);
             }
 
             .footer-col {
-                border-left: 0;
-                padding-left: 0
+                border-left: 10px;
+                padding-left:20px
             }
         }
 
@@ -676,6 +676,25 @@ $popular_result = $conn->query($popular_sql);
             .cta-left {
                 flex-direction: column;
                 align-items: flex-start
+            }
+        }
+
+        /* mobile device stylings new  */
+        @media (max-width:576px) {
+
+            .filter-buttons {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .filter-buttons a {
+                width: 100%;
+            }
+
+            .filter-buttons .filter-btn {
+                width: 100%;
+                font-size: 12px;
             }
         }
     </style>
@@ -731,60 +750,34 @@ $popular_result = $conn->query($popular_sql);
         </div>
     </section>
 
-   <section class="blog-body">
-    <div class="filter-row">
-        <div class="filter-buttons">
-            <a href="blogs.php" style="text-decoration:none;"><button class="filter-btn <?php echo empty($service) ? 'active' : ''; ?>">ALL ARTICLES</button></a>
-            <a href="blogs.php?service=INDUSTRY INSIGHTS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'INDUSTRY INSIGHTS') ? 'active' : ''; ?>">INDUSTRY INSIGHTS</button></a>
-            <a href="blogs.php?service=STEEL KNOWLEDGE" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'STEEL KNOWLEDGE') ? 'active' : ''; ?>">STEEL KNOWLEDGE</button></a>
-            <a href="blogs.php?service=MARKET TRENDS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'MARKET TRENDS') ? 'active' : ''; ?>">MARKET TRENDS</button></a>
-            <a href="blogs.php?service=COMPANY NEWS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'COMPANY NEWS') ? 'active' : ''; ?>">COMPANY NEWS</button></a>
+    <section class="blog-body">
+        <div class="filter-row">
+            <div class="filter-buttons">
+                <a href="blogs.php" style="text-decoration:none;"><button class="filter-btn <?php echo empty($service) ? 'active' : ''; ?>">ALL ARTICLES</button></a>
+                  <a href="blogs.php?service=MARKET TRENDS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'MARKET TRENDS') ? 'active' : ''; ?>">MARKET TRENDS</button></a>
+                <a href="blogs.php?service=INDUSTRY INSIGHTS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'INDUSTRY INSIGHTS') ? 'active' : ''; ?>">INDUSTRY INSIGHTS</button></a>
+               
+                <a href="blogs.php?service=STEEL KNOWLEDGE" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'STEEL KNOWLEDGE') ? 'active' : ''; ?>">STEEL KNOWLEDGE</button></a>
+               
+                <a href="blogs.php?service=COMPANY NEWS" style="text-decoration:none;"><button class="filter-btn <?php echo ($service == 'COMPANY NEWS') ? 'active' : ''; ?>">COMPANY NEWS</button></a>
+            </div>
+
+            <form method="GET" action="blogs.php" class="search-box" id="searchForm">
+                <?php if (!empty($service)): ?>
+                    <input type="hidden" name="service" value="<?php echo htmlspecialchars($service); ?>">
+                <?php endif; ?>
+                <input type="text" name="search" placeholder="Search blogs or services..." value="<?php echo htmlspecialchars($search); ?>">
+                <i class="fa-solid fa-magnifying-glass" onclick="document.getElementById('searchForm').submit();" style="cursor: pointer;"></i>
+            </form>
         </div>
 
-        <form method="GET" action="blogs.php" class="search-box" id="searchForm">
-            <?php if(!empty($service)): ?>
-                <input type="hidden" name="service" value="<?php echo htmlspecialchars($service); ?>">
-            <?php endif; ?>
-            <input type="text" name="search" placeholder="Search blogs or services..." value="<?php echo htmlspecialchars($search); ?>">
-            <i class="fa-solid fa-magnifying-glass" onclick="document.getElementById('searchForm').submit();" style="cursor: pointer;"></i>
-        </form>
-    </div>
+        <div class="main-layout">
+            <div>
+                <?php if (count($blogs) > 0): ?>
 
-    <div class="main-layout">
-        <div>
-            <?php if (count($blogs) > 0): ?>
-                
-                <div class="blog-grid">
-                    <?php 
-                    for ($i = 0; $i < min(2, count($blogs)); $i++) {
-                        $row = $blogs[$i];
-                        $image_path = !empty($row['main_image']) ? "admin/uploads/photos/" . htmlspecialchars($row['main_image']) : "default_image.png";
-                        $blog_link_val = !empty($row['slug']) ? urlencode($row['slug']) : $row['id'];
-                        $final_url = "fullblog.php?id=" . $blog_link_val;
-                        $formatted_date = date("M d, Y", strtotime($row['created_at']));
-                        $preview = substr(strip_tags(html_entity_decode($row['main_content'])), 0, 100);
-                        $tag_name = !empty($row['service']) ? htmlspecialchars($row['service']) : "STEEL KNOWLEDGE";
-                    ?>
-                        <div class="blog-card" onclick="window.location.href='<?php echo $final_url; ?>';" style="cursor: pointer;">
-                            <div class="blog-img" style="background-image:url('<?php echo $image_path; ?>')">
-                                <div class="blog-tag"><?php echo strtoupper($tag_name); ?></div>
-                            </div>
-                            <div class="blog-content">
-                                <h3><?php echo htmlspecialchars($row['title']); ?></h3>
-                                <p><?php echo $preview; ?>...</p>
-                                <div class="blog-meta">
-                                    <span><?php echo $formatted_date; ?> &nbsp; • &nbsp; 5 min read</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                    <?php } ?>
-                </div>
-
-                <?php if (count($blogs) > 2): ?>
-                    <div class="small-blog-grid">
-                        <?php 
-                        for ($i = 2; $i < count($blogs); $i++) {
+                    <div class="blog-grid">
+                        <?php
+                        for ($i = 0; $i < min(2, count($blogs)); $i++) {
                             $row = $blogs[$i];
                             $image_path = !empty($row['main_image']) ? "admin/uploads/photos/" . htmlspecialchars($row['main_image']) : "default_image.png";
                             $blog_link_val = !empty($row['slug']) ? urlencode($row['slug']) : $row['id'];
@@ -808,100 +801,128 @@ $popular_result = $conn->query($popular_sql);
                             </div>
                         <?php } ?>
                     </div>
+
+                    <?php if (count($blogs) > 2): ?>
+                        <div class="small-blog-grid">
+                            <?php
+                            for ($i = 2; $i < count($blogs); $i++) {
+                                $row = $blogs[$i];
+                                $image_path = !empty($row['main_image']) ? "admin/uploads/photos/" . htmlspecialchars($row['main_image']) : "default_image.png";
+                                $blog_link_val = !empty($row['slug']) ? urlencode($row['slug']) : $row['id'];
+                                $final_url = "fullblog.php?id=" . $blog_link_val;
+                                $formatted_date = date("M d, Y", strtotime($row['created_at']));
+                                $preview = substr(strip_tags(html_entity_decode($row['main_content'])), 0, 100);
+                                $tag_name = !empty($row['service']) ? htmlspecialchars($row['service']) : "STEEL KNOWLEDGE";
+                            ?>
+                                <div class="blog-card" onclick="window.location.href='<?php echo $final_url; ?>';" style="cursor: pointer;">
+                                    <div class="blog-img" style="background-image:url('<?php echo $image_path; ?>')">
+                                        <div class="blog-tag"><?php echo strtoupper($tag_name); ?></div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <h3><?php echo htmlspecialchars($row['title']); ?></h3>
+                                        <p><?php echo $preview; ?>...</p>
+                                        <div class="blog-meta">
+                                            <span><?php echo $formatted_date; ?> &nbsp; • &nbsp; 5 min read</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    <?php endif; ?>
+
+                <?php else: ?>
+                    <p style="text-align: center; padding: 40px; font-weight: bold; color: #666;">No blog posts found matching your search criteria.</p>
                 <?php endif; ?>
 
-            <?php else: ?>
-                <p style="text-align: center; padding: 40px; font-weight: bold; color: #666;">No blog posts found matching your search criteria.</p>
-            <?php endif; ?>
+                <?php if ($total_pages > 1): ?>
+                    <div class="pagination-wrap">
+                        <?php
+                        // Build base URL for pagination parameters preservation
+                        $url_parts = [];
+                        if (!empty($service)) $url_parts[] = "service=" . urlencode($service);
+                        if (!empty($search)) $url_parts[] = "search=" . urlencode($search);
+                        $base_url = "blogs.php?" . (count($url_parts) > 0 ? implode("&", $url_parts) . "&" : "");
 
-            <?php if ($total_pages > 1): ?>
-                <div class="pagination-wrap">
-                    <?php 
-                    // Build base URL for pagination parameters preservation
-                    $url_parts = [];
-                    if (!empty($service)) $url_parts[] = "service=" . urlencode($service);
-                    if (!empty($search)) $url_parts[] = "search=" . urlencode($search);
-                    $base_url = "blogs.php?" . (count($url_parts) > 0 ? implode("&", $url_parts) . "&" : "");
-                    
-                    // Page Loop
-                    for ($p = 1; $p <= $total_pages; $p++) {
-                        $active_class = ($p == $page) ? 'active' : '';
-                        echo "<a href='{$base_url}page={$p}' style='text-decoration:none;'><button class='page-btn {$active_class}'>{$p}</button></a>";
-                    }
-                    
-                    // Next Button setup
-                    if ($page < $total_pages) {
-                        $next_page = $page + 1;
-                        echo "<a href='{$base_url}page={$next_page}' style='text-decoration:none;'><button class='page-btn' style='width:80px;'>Next <i class='fa-solid fa-arrow-right text-warning ms-2'></i></button></a>";
+                        // Page Loop
+                        for ($p = 1; $p <= $total_pages; $p++) {
+                            $active_class = ($p == $page) ? 'active' : '';
+                            echo "<a href='{$base_url}page={$p}' style='text-decoration:none;'><button class='page-btn {$active_class}'>{$p}</button></a>";
+                        }
+
+                        // Next Button setup
+                        if ($page < $total_pages) {
+                            $next_page = $page + 1;
+                            echo "<a href='{$base_url}page={$next_page}' style='text-decoration:none;'><button class='page-btn' style='width:80px;'>Next <i class='fa-solid fa-arrow-right text-warning ms-2'></i></button></a>";
+                        }
+                        ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+
+            <aside>
+                <div class="sidebar-card">
+                    <h3>Popular Posts</h3>
+                    <div class="sidebar-line"></div>
+
+                    <?php
+                    if ($popular_result && $popular_result->num_rows > 0) {
+                        $rank = 1;
+                        while ($p_row = $popular_result->fetch_assoc()) {
+                            $p_image = !empty($p_row['main_image']) ? "admin/uploads/photos/" . htmlspecialchars($p_row['main_image']) : "default_image.png";
+                            $p_url = "fullblog.php?id=" . (!empty($p_row['slug']) ? urlencode($p_row['slug']) : $p_row['id']);
+                            $p_date = date("M d, Y", strtotime($p_row['created_at']));
+                    ?>
+                            <div class="popular-post" onclick="window.location.href='<?php echo $p_url; ?>';" style="cursor: pointer;">
+                                <div class="post-num"><?php echo $rank++; ?></div>
+                                <div class="post-img" style="background-image:url('<?php echo $p_image; ?>')"></div>
+                                <div>
+                                    <h5><?php echo htmlspecialchars($p_row['title']); ?></h5>
+                                    <p><?php echo $p_date; ?></p>
+                                </div>
+                            </div>
+                    <?php
+                        }
+                    } else {
+                        echo "<p>No recent posts available.</p>";
                     }
                     ?>
                 </div>
-            <?php endif; ?>
+
+                <div class="sidebar-card newsletter">
+                    <div class="newsletter-icon"><i class="fa-regular fa-envelope"></i></div>
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Get the latest industry insights, company updates and trends straight to your inbox.</p>
+                    <input type="email" placeholder="Enter your email address">
+                    <button class="btn-gold w-100">SUBSCRIBE <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                    <small>We respect your privacy.</small>
+                </div>
+            </aside>
         </div>
 
-        <aside>
-            <div class="sidebar-card">
-                <h3>Popular Posts</h3>
-                <div class="sidebar-line"></div>
-
-                <?php
-                if ($popular_result && $popular_result->num_rows > 0) {
-                    $rank = 1;
-                    while ($p_row = $popular_result->fetch_assoc()) {
-                        $p_image = !empty($p_row['main_image']) ? "admin/uploads/photos/" . htmlspecialchars($p_row['main_image']) : "default_image.png";
-                        $p_url = "fullblog.php?id=" . (!empty($p_row['slug']) ? urlencode($p_row['slug']) : $p_row['id']);
-                        $p_date = date("M d, Y", strtotime($p_row['created_at']));
-                ?>
-                        <div class="popular-post" onclick="window.location.href='<?php echo $p_url; ?>';" style="cursor: pointer;">
-                            <div class="post-num"><?php echo $rank++; ?></div>
-                            <div class="post-img" style="background-image:url('<?php echo $p_image; ?>')"></div>
-                            <div>
-                                <h5><?php echo htmlspecialchars($p_row['title']); ?></h5>
-                                <p><?php echo $p_date; ?></p>
-                            </div>
-                        </div>
-                <?php
-                    }
-                } else {
-                    echo "<p>No recent posts available.</p>";
-                }
-                ?>
+        <section class="cta-strip">
+            <div class="cta-left">
+                <div class="cta-icon">
+                    <i class="fa-regular fa-file-lines"></i>
+                </div>
+                <div>
+                    <h3>Have a Project in Mind?</h3>
+                    <h3><span>Get the Best Steel Solution Today.</span></h3>
+                </div>
             </div>
-
-            <div class="sidebar-card newsletter">
-                <div class="newsletter-icon"><i class="fa-regular fa-envelope"></i></div>
-                <h4>Subscribe to Our Newsletter</h4>
-                <p>Get the latest industry insights, company updates and trends straight to your inbox.</p>
-                <input type="email" placeholder="Enter your email address">
-                <button class="btn-gold w-100">SUBSCRIBE <i class="fa-solid fa-arrow-right ms-2"></i></button>
-                <small>We respect your privacy.</small>
-            </div>
-        </aside>
-    </div>
-
-    <section class="cta-strip">
-        <div class="cta-left">
-            <div class="cta-icon">
-                <i class="fa-regular fa-file-lines"></i>
-            </div>
-            <div>
-                <h3>Have a Project in Mind?</h3>
-                <h3><span>Get the Best Steel Solution Today.</span></h3>
-            </div>
-        </div>
-        <a href="get_a_qoute.php"> 
-            <button class="btn-gold">GET A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button>
-        </a>
+            <a href="get_a_qoute.php">
+                <button class="btn-gold">GET A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button>
+            </a>
+        </section>
     </section>
-</section>
 
-<?php 
+    <?php
 
-$conn->close();
-?>
+    $conn->close();
+    ?>
 
     <footer class="footer">
-        <div class="container-fluid px-lg-5">
+        <div class="container px-lg-5">
             <div class="row g-4">
                 <div class="col-lg-3">
                     <div class="logo-wrap mb-3">
@@ -914,14 +935,14 @@ $conn->close();
                         Building strength. Delivering trust.
                     </p>
                     <div class="socials">
-                     <a href=" https://www.facebook.com/RajahmundrySteels/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=" https://www.facebook.com/RajahmundrySteels/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/rajahmundrysteels/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.youtube.com/@RajahmundrySteels-1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 
-                <div class="col-lg-2 offset-lg-1 footer-col">
+                <div class="col-lg-2 col-6 offset-lg-1 footer-col ">
                     <h6>QUICK LINKS</h6>
                     <a href="#">Home</a>
                     <a href="#">About Us</a>
@@ -933,7 +954,7 @@ $conn->close();
                     <a href="#">Contact Us</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-2 col-6 footer-col ">
                     <h6>PRODUCTS</h6>
                     <a href="#">TMT Bars</a>
                     <a href="#">Structural Steel</a>
@@ -943,7 +964,7 @@ $conn->close();
                     <a href="#">Industrial Steel Supply</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-2 col-4 col-md-6 footer-col d-block d-lg-none d-xl-block ">
                     <h6>YARDS</h6>
                     <a href="#">Rajahmundry</a>
                     <a href="#">Vijayawada</a>
@@ -951,7 +972,7 @@ $conn->close();
                     <a href="#">Hyderabad</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-4 col-xl-2 col-8 col-md-6 footer-col ">
                     <h6>CONTACT US</h6>
                     <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
                     <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

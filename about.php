@@ -179,6 +179,7 @@
       /* CHANGE THIS IMAGE: Rajamundry Steels building */
       background-size: cover;
       background-position: center;
+      margin-top: 10px;
     }
 
     .who-content {
@@ -508,11 +509,11 @@
       }
 
       .who-content {
-        padding: 45px 24px;
+        padding: 45px 10px;
       }
 
       .stat-row {
-        grid-template-columns: 1fr;
+       grid-template-columns: repeat(2, 1fr);
       }
 
       .mini-stat {
@@ -592,8 +593,8 @@
             Founded with a vision to provide top-grade steel products, Rajahmundry Steels has grown into a premier steel trading company and a preferred supplier for contractors, builders, industrial giants, and infrastructure developers.
           </p>
           <div class="hero-buttons">
-            <button class="btn-gold">OUR JOURNEY &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
-            <button class="btn-outline-gold">OUR INFRASTRUCTURE</button>
+       <a href="Products.php">     <button class="btn-gold">Products &nbsp; <i class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="contact.php">    <button class="btn-outline-gold">Contact <i class="fa-solid fa-arrow-right"></i></button></a>
           </div>
         </div>
       </div>
@@ -842,7 +843,7 @@
 
       <div class="col-lg-9">
         <div class="row g-3">
-          <div class="col-md-4 col-lg-2">
+          <div class="col-md-4 col-lg-2 col-6">
             <div class="value-card">
               <i class="fa-solid fa-shield-halved"></i>
               <h6>PREMIUM QUALITY</h6>
@@ -850,7 +851,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3">
+          <div class="col-md-4 col-lg-3 col-6">
             <div class="value-card">
               <i class="fa-regular fa-handshake"></i>
               <h6>BUSINESS INTEGRITY</h6>
@@ -858,7 +859,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-2">
+          <div class="col-md-4 col-lg-2 col-6">
             <div class="value-card">
               <i class="fa-regular fa-user"></i>
               <h6>CUSTOMER COMMITMENT</h6>
@@ -866,7 +867,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-2">
+          <div class="col-md-4 col-lg-2 col-6">
             <div class="value-card">
               <i class="fa-solid fa-truck-fast"></i>
               <h6>ON-TIME DELIVERY</h6>
@@ -874,7 +875,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3">
+          <div class="col-md-4 col-lg-3 col-12">
             <div class="value-card">
               <i class="fa-solid fa-users-gear"></i>
               <h6>INDUSTRY EXPERTISE</h6>
@@ -930,7 +931,7 @@
           </div>
         </div>
 
-        <div class="col-lg-2 offset-lg-1">
+        <div class="col-lg-2 col-6 offset-lg-1">
           <h6>QUICK LINKS</h6>
           <a href="index.php">Home</a>
           <a href="about.php">About Us</a>
@@ -941,7 +942,7 @@
           <a href="contact.php">Contact</a>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-6">
           <h6>PRODUCTS</h6>
           <a href="Products.php">TMT Bars</a>
           <a href="Products.php">Structural Steel</a>
@@ -950,7 +951,7 @@
           <a href="Products.php">Roofing Sheets</a>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-4">
           <h6>VENDORS</h6>
           <a href="Vendors.php">JSW Steel</a>
           <a href="Vendors.php">Tata Steel</a>
@@ -958,7 +959,7 @@
           <a href="Vendors.php">BondX</a>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-8">
           <h6>CONTACT US</h6>
           <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
           <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

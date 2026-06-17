@@ -648,7 +648,7 @@
 
             .footer-col {
                 border-left: 0;
-                padding-left: 0;
+                padding-left: 20px;
             }
         }
 
@@ -686,6 +686,36 @@
                 width: 100%;
             }
         }
+
+        /* mobile device new stylings  */
+        @media (max-width:576px) {
+
+            .hero-features {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .hero-feature {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 8px;
+            }
+
+            .hero-feature i {
+                margin-bottom: 8px;
+            }
+
+            .hero-feature h6 {
+                font-size: 12px;
+                line-height: 1.4;
+                margin: 0;
+            }
+        }
     </style>
 </head>
 
@@ -717,7 +747,9 @@
 
                     <li><a class="nav-link" href="contact.php">CONTACT</a></li>
                     <a></a>
-             <a href="get_a_qoute.php"> <li><button  class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li></a>
+                    <a href="get_a_qoute.php">
+                        <li><button class="btn-gold ms-lg-3"> GET IN A QUOTE → </button></li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -871,65 +903,65 @@
     </section>
 
     <section class="network">
-    <div class="network-layout">
+        <div class="network-layout">
 
-        <div>
-            <small>OUR NETWORK</small>
+            <div>
+                <small>OUR NETWORK</small>
 
-            <h2>Connecting Markets.<br>Delivering Strength.</h2>
+                <h2>Connecting Markets.<br>Delivering Strength.</h2>
 
-            <div class="gold-line"></div>
+                <div class="gold-line"></div>
 
-            <p>
-                Backed by a strong distribution network and decades of industry experience, we ensure reliable steel supply, faster deliveries, and seamless service across key locations in Andhra Pradesh.
-            </p>
+                <p>
+                    Backed by a strong distribution network and decades of industry experience, we ensure reliable steel supply, faster deliveries, and seamless service across key locations in Andhra Pradesh.
+                </p>
 
-           <a href="contact.php"> <button class="btn-gold mt-3">
-                CONNECT WITH US <i class="fa-solid fa-arrow-right ms-2"></i>
-            </button>
-            </a>
-        </div>
-
-        <div class="india-map">
-            <i class="fa-solid fa-location-dot pin p1"></i>
-            <i class="fa-solid fa-location-dot pin p3"></i>
-            <i class="fa-solid fa-location-dot pin p5"></i>
-
-            <div class="pin-label l1">GAJUWAKA</div>
-            <div class="pin-label l3">GANNAVARAM</div>
-            <div class="pin-label l5">RAJAHMUNDRY</div>
-        </div>
-
-        <div class="network-card">
-
-            <div class="net-item">
-                <i class="fa-solid fa-globe"></i>
-                <div>
-                    <h5>STRATEGIC LOCATIONS</h5>
-                    <p>Serving customers through key distribution centers across the region.</p>
-                </div>
+                <a href="contact.php"> <button class="btn-gold mt-3">
+                        CONNECT WITH US <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </button>
+                </a>
             </div>
 
-            <div class="net-item">
-                <i class="fa-solid fa-truck"></i>
-                <div>
-                    <h5>FAST DELIVERY</h5>
-                    <p>Efficient logistics ensure timely steel supply for every project.</p>
-                </div>
+            <div class="india-map">
+                <i class="fa-solid fa-location-dot pin p1"></i>
+                <i class="fa-solid fa-location-dot pin p3"></i>
+                <i class="fa-solid fa-location-dot pin p5"></i>
+
+                <div class="pin-label l1">GAJUWAKA</div>
+                <div class="pin-label l3">GANNAVARAM</div>
+                <div class="pin-label l5">RAJAHMUNDRY</div>
             </div>
 
-            <div class="net-item">
-                <i class="fa-regular fa-handshake"></i>
-                <div>
-                    <h5>TRUSTED SUPPORT</h5>
-                    <p>Dedicated teams providing reliable service and customer assistance.</p>
+            <div class="network-card">
+
+                <div class="net-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>
+                        <h5>STRATEGIC LOCATIONS</h5>
+                        <p>Serving customers through key distribution centers across the region.</p>
+                    </div>
                 </div>
+
+                <div class="net-item">
+                    <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <h5>FAST DELIVERY</h5>
+                        <p>Efficient logistics ensure timely steel supply for every project.</p>
+                    </div>
+                </div>
+
+                <div class="net-item">
+                    <i class="fa-regular fa-handshake"></i>
+                    <div>
+                        <h5>TRUSTED SUPPORT</h5>
+                        <p>Dedicated teams providing reliable service and customer assistance.</p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
     <section class="cta-strip">
         <h2>
@@ -973,7 +1005,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 offset-lg-1 footer-col">
+                <div class="col-lg-2 col-6 offset-lg-1 footer-col">
                     <h6>QUICK LINKS</h6>
                     <a href="index.php">Home</a>
                     <a href="about.php">About Us</a>
@@ -984,7 +1016,7 @@
                     <a href="contact.php">Contact</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-2 col-6 footer-col">
                     <h6>PRODUCTS</h6>
                     <a href="Products.php">TMT Bars</a>
                     <a href="Products.php">Structural Steel</a>
@@ -993,7 +1025,7 @@
                     <a href="Products.php">Roofing Sheets</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-2 col-4 footer-col">
                     <h6>VENDORS</h6>
                     <a href="Vendors.php">JSW Steel</a>
                     <a href="Vendors.php">Tata Steel</a>
@@ -1001,7 +1033,7 @@
                     <a href="Vendors.php">BondX</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-2 col-8 footer-col">
                     <h6>CONTACT US</h6>
                     <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
                     <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

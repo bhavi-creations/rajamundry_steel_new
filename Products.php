@@ -322,7 +322,7 @@
         .commit-img {
             min-height: 200px;
             border-radius: 7px;
-            background: url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=900&auto=format&fit=crop");
+            background: url("./assets/img/gallrey_3.png");
             background-size: cover;
             background-position: center;
         }
@@ -528,7 +528,7 @@
 
             .footer-col {
                 border-left: 0;
-                padding-left: 0;
+                padding-left: 20px;
             }
         }
 
@@ -565,6 +565,43 @@
             .btn-gold,
             .btn-outline-gold {
                 width: 100%;
+            }
+        }
+
+        /* mobile device responsive   */
+        @media (max-width:576px) {
+
+            .hero-features {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .hero-feature {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+
+
+        @media (max-width:576px) {
+
+            .commit-stats {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .commit-stat {
+                width: 100%;
+                text-align: center;
+                flex-direction: column;
+                padding: 15px 10px;
+            }
+
+            .commit-stat i {
+                margin-bottom: 8px;
             }
         }
     </style>
@@ -607,42 +644,42 @@
     </nav>
 
     <section class="products-hero">
-    <div class="container-fluid px-lg-5">
-        <div class="col-lg-6">
-            <div class="hero-label">OUR PRODUCTS</div>
-            <h1>
-                Quality Steel.<br>
-                <span>Built For Every Project.</span>
-            </h1>
-            <div class="gold-line"></div>
-            <p>
-                With over 60 years of industry expertise, we supply a comprehensive range of premium steel products designed to meet the demands of construction, infrastructure, engineering, and industrial applications. Sourced from India's most trusted manufacturers, our products deliver exceptional strength, durability, and long-term performance.
-            </p>
+        <div class="container-fluid px-lg-5">
+            <div class="col-lg-6">
+                <div class="hero-label">OUR PRODUCTS</div>
+                <h1>
+                    Quality Steel.<br>
+                    <span>Built For Every Project.</span>
+                </h1>
+                <div class="gold-line"></div>
+                <p>
+                    With over 60 years of industry expertise, we supply a comprehensive range of premium steel products designed to meet the demands of construction, infrastructure, engineering, and industrial applications. Sourced from India's most trusted manufacturers, our products deliver exceptional strength, durability, and long-term performance.
+                </p>
 
-            <div class="hero-features pb-5">
-                <div class="hero-feature">
-                    <i class="fa-solid fa-award"></i>
-                    <h6>PREMIUM<br>QUALITY</h6>
-                </div>
+                <div class="hero-features pb-5">
+                    <div class="hero-feature">
+                        <i class="fa-solid fa-award"></i>
+                        <h6>PREMIUM<br>QUALITY</h6>
+                    </div>
 
-                <div class="hero-feature">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h6>TRUSTED<br>BRANDS</h6>
-                </div>
+                    <div class="hero-feature">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h6>TRUSTED<br>BRANDS</h6>
+                    </div>
 
-                <div class="hero-feature">
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <h6>WIDE PRODUCT<br>RANGE</h6>
-                </div>
+                    <div class="hero-feature">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <h6>WIDE PRODUCT<br>RANGE</h6>
+                    </div>
 
-                <div class="hero-feature">
-                    <i class="fa-solid fa-truck"></i>
-                    <h6>FAST & RELIABLE<br>DELIVERY</h6>
+                    <div class="hero-feature">
+                        <i class="fa-solid fa-truck"></i>
+                        <h6>FAST & RELIABLE<br>DELIVERY</h6>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section class="products-section">
         <div class="section-center">
@@ -750,54 +787,54 @@
         </div>
     </section>
 
-   <section class="commitment">
-    <div class="commitment-layout">
-        <div class="commit-img"></div>
+    <section class="commitment">
+        <div class="commitment-layout">
+            <div class="commit-img"></div>
 
-        <div>
-            <small>OUR COMMITMENT</small>
-            <h2>Delivering Strength.<br>Building Trust.<br>Creating Value.</h2>
-            <div class="gold-line"></div>
-            <p>
-                For over six decades, we have remained committed to supplying premium-quality steel products backed by reliability, integrity, and exceptional customer service. Our focus is to support every project with the right materials, timely delivery, and uncompromising quality standards.
-            </p>
+            <div>
+                <small>OUR COMMITMENT</small>
+                <h2>Delivering Strength.<br>Building Trust.<br>Creating Value.</h2>
+                <div class="gold-line"></div>
+                <p>
+                    For over six decades, we have remained committed to supplying premium-quality steel products backed by reliability, integrity, and exceptional customer service. Our focus is to support every project with the right materials, timely delivery, and uncompromising quality standards.
+                </p>
+            </div>
+
+            <div class="commit-stats">
+                <div class="commit-stat">
+                    <i class="fa-solid fa-award"></i>
+                    <div>
+                        <h3>5000+</h3>
+                        <p>Successful Deliveries</p>
+                    </div>
+                </div>
+
+                <div class="commit-stat">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h3>1000+</h3>
+                        <p>Satisfied Clients</p>
+                    </div>
+                </div>
+
+                <div class="commit-stat">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <h3>60+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                </div>
+
+                <div class="commit-stat">
+                    <i class="fa-solid fa-handshake"></i>
+                    <div>
+                        <h3>6+</h3>
+                        <p>Trusted Brand Partners</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="commit-stats">
-            <div class="commit-stat">
-                <i class="fa-solid fa-award"></i>
-                <div>
-                    <h3>5000+</h3>
-                    <p>Successful Deliveries</p>
-                </div>
-            </div>
-
-            <div class="commit-stat">
-                <i class="fa-solid fa-users"></i>
-                <div>
-                    <h3>1000+</h3>
-                    <p>Satisfied Clients</p>
-                </div>
-            </div>
-
-            <div class="commit-stat">
-                <i class="fa-solid fa-shield-halved"></i>
-                <div>
-                    <h3>60+</h3>
-                    <p>Years of Excellence</p>
-                </div>
-            </div>
-
-            <div class="commit-stat">
-                <i class="fa-solid fa-handshake"></i>
-                <div>
-                    <h3>4+</h3>
-                    <p>Trusted Brand Partners</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <section class="cta-strip">
         <h2>
@@ -811,7 +848,7 @@
         </p>
 
         <div class="cta-actions">
-           <a href="get_a_qoute.php"> <button class="btn-gold">REQUEST A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button></a>
+            <a href="get_a_qoute.php"> <button class="btn-gold">REQUEST A QUOTE <i class="fa-solid fa-arrow-right ms-2"></i></button></a>
             <a href="https://wa.me/919652239999" target="_blank"> <button class="btn-outline-gold">
                     <i class="fa-brands fa-whatsapp text-warning me-2"></i> CHAT ON WHATSAPP
                 </button></a>
@@ -835,14 +872,14 @@
                         Building structures. Strengthening relationships.
                     </p>
                     <div class="socials">
-                    <a href=" https://www.facebook.com/RajahmundrySteels/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/rajahmundrysteels/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/@RajahmundrySteels-1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=" https://www.facebook.com/RajahmundrySteels/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/rajahmundrysteels/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@RajahmundrySteels-1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 
-                <div class="col-lg-2 offset-lg-1 footer-col">
+                <div class="col-lg-2 col-6 offset-lg-1 footer-col">
                     <h6>QUICK LINKS</h6>
                     <a href="#">Home</a>
                     <a href="#">About Us</a>
@@ -853,7 +890,7 @@
                     <a href="#">Contact</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-2 col-6 footer-col">
                     <h6>PRODUCTS</h6>
                     <a href="#">TMT Bars</a>
                     <a href="#">Structural Steel</a>
@@ -863,7 +900,7 @@
                     <a href="#">Industrial Steel Supply</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-2 col-4 footer-col">
                     <h6>VENDORS</h6>
                     <a href="#">JSW Steel</a>
                     <a href="#">Tata Steel</a>
@@ -871,7 +908,7 @@
                     <a href="#">BondX Steel</a>
                 </div>
 
-                <div class="col-lg-2 footer-col">
+                <div class="col-lg-2 col-8 footer-col">
                     <h6>CONTACT US</h6>
                     <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
                     <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

@@ -197,6 +197,7 @@
             color: #fff
         }
 
+
         .stat p {
             font-size: 12px;
             font-weight: 700;
@@ -369,27 +370,31 @@
                 border-right: 0;
                 margin-bottom: 25px
             }
-        }
 
-        @media(max-width:576px) {
-            .hero {
-                min-height: auto;
-                padding: 80px 0
+            .stat h2 {
+                font-size: 35px;
             }
+}
 
-            .hero h1 {
-                font-size: 42px
-            }
+            @media(max-width:576px) {
+                .hero {
+                    min-height: auto;
+                    padding: 80px 0
+                }
 
-            .features {
-                grid-template-columns: 1fr
-            }
+                .hero h1 {
+                    font-size: 39px
+                }
 
-            .brand-box {
-                font-size: 20px;
-                margin: 15px 0
+                .features {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                .brand-box {
+                    font-size: 20px;
+                    margin: 15px 0
+                }
             }
-        }
     </style>
 </head>
 
@@ -400,10 +405,10 @@
             <a class="navbar-brand logo" href="#">
                 <!-- <div class="logo-box">R</div> -->
                 <div>
-                 <!--   RAJAMUNDRY<br>STEELS
+                    <!--   RAJAMUNDRY<br>STEELS
                      <small>BUILT ON TRUST. ENGINEERED FOR TOMORROW.</small> -->
 
-                     <img src="./assets/img/logo.png" alt="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
                 </div>
             </a>
 
@@ -438,8 +443,8 @@
             <p>Rajahmundry Steels is a leading steel distributor and supplier in Andhra Pradesh with direct partnerships with JSW Steel, Tata Steel, Vizag Steel, and BondX. Serving customers through our branches in Rajahmundry, Gajuwaka (Visakhapatnam), and Gannavaram (Vijayawada).
             </p>
             <div class="mt-4">
-                <button class="btn-gold me-3">GET BEST PRICE →</button>
-                <button class="btn-outline-gold">EXPLORE PRODUCTS</button>
+                <a href="Products.php"> <button class="btn-gold me-3">Products</button></a>
+                <a href="contact.php"> <button class="btn-outline-gold">Contact Us</button></a>
             </div>
 
             <div class="features ">
@@ -498,19 +503,19 @@
     <section class="stats">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 stat">
+                <div class="col-md-3 col-6 stat">
                     <h2>60+</h2>
                     <p>YEARS OF<br>EXCELLENCE</p>
                 </div>
-                <div class="col-md-3 stat">
+                <div class="col-md-3 col-6 stat">
                     <h2>1000+</h2>
                     <p>HAPPY<br>CLIENTS</p>
                 </div>
-                <div class="col-md-3 stat">
+                <div class="col-md-3 col-6 stat">
                     <h2>5000+</h2>
                     <p>SUCCESSFUL<br>DELIVERIES</p>
                 </div>
-                <div class="col-md-3 stat">
+                <div class="col-md-3 col-6 stat">
                     <h2>4+</h2>
                     <p>DIRECT VENDOR<br>PARTNERS</p>
                 </div>
@@ -518,7 +523,7 @@
         </div>
     </section>
 
-    <section class="about px-3" id="about">
+    <section class="about px-4" id="about">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
@@ -542,7 +547,7 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-md-4 col-lg-2">
+                <div class="col-md-4 col-xl-2">
                     <div class="product-card">
                         <div class="product-img" style="background-image:url('./assets/img/TMT.png')"></div>
                         <div class="p-3">
@@ -552,7 +557,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-2">
+                <div class="col-md-4 col-xl-2">
                     <div class="product-card">
                         <div class="product-img" style="background-image:url('./assets/img/Structural\ Steel.png')"></div>
                         <div class="p-3">
@@ -562,7 +567,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-2">
+                <div class="col-md-4 col-xl-2">
                     <div class="product-card">
                         <div class="product-img" style="background-image:url('./assets/img/ms.png')"></div>
                         <div class="p-3">
@@ -573,7 +578,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-2">
+                <div class="col-md-4 col-xl-2">
                     <div class="product-card">
                         <div class="product-img" style="background-image:url('./assets/img/Steel_Sheets.png')"></div>
                         <div class="p-3">
@@ -584,7 +589,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-2">
+                <div class="col-md-4 col-xl-2">
                     <div class="product-card">
                         <div class="product-img" style="background-image:url('./assets/img/binding_wire.png')"></div>
                         <div class="p-3">
@@ -595,7 +600,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-2">
+                <div class="col-md-4 col-xl-2">
                     <div class="product-card">
                         <div class="product-img" style="background-image:url('./assets/img/angles_channels.png')"></div>
                         <div class="p-3">
@@ -622,42 +627,42 @@
 
                 <div class="col-lg-9">
                     <div class="row g-3">
-                        <div class="col-md-4 col-lg-2">
+                        <div class="col-md-4 col-xl-2">
                             <div class="choose-card">
                                 <div>🤝</div>
                                 <h6>DIRECT VENDOR SUPPLY</h6>
                                 <p>Authorized supply from JSW Steel, Tata Steel, Vizag Steel, and BondX.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-2">
+                        <div class="col-md-4 col-xl-2">
                             <div class="choose-card">
                                 <div>🛡</div>
                                 <h6>PREMIUM QUALITY</h6>
                                 <p>Certified steel products that meet industry standards.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-2">
+                        <div class="col-md-4 col-xl-2">
                             <div class="choose-card">
                                 <div>📦</div>
                                 <h6>BULK STOCK</h6>
                                 <p>Large inventory available for immediate and bulk requirements.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-2">
+                        <div class="col-md-4 col-xl-2">
                             <div class="choose-card">
                                 <div>🏷</div>
                                 <h6>COMPETITIVE PRICE</h6>
                                 <p>Best-value steel solutions with transparent pricing.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-2">
+                        <div class="col-md-4 col-xl-2">
                             <div class="choose-card">
                                 <div>🚚</div>
                                 <h6>FAST DISPATCH</h6>
                                 <p>Reliable logistics and on-time delivery across Andhra Pradesh.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-2">
+                        <div class="col-md-4 col-xl-2">
                             <div class="choose-card">
                                 <div>🎧</div>
                                 <h6>TRUSTED SUPPORT</h6>
@@ -744,16 +749,16 @@
     <footer id="contact">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-3">
+                <div class="col-md-3 footer_section">
                     <div class="logo mb-3">
                         <!-- <div class="logo-box">R</div> -->
                         <!-- <div>RAJAMUNDRY<br>STEELS</div> -->
-                         <img src="./assets/img/logo.png" alt="logo">
+                        <img src="./assets/img/logo.png" alt="logo">
                     </div>
                     <p>Premium steel solutions for construction, industrial and commercial needs.</p>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-3 col-5 footer_section">
                     <h6>QUICK LINKS</h6>
                     <a href="index.php">Home</a>
                     <a href="about.php">About Us</a>
@@ -764,7 +769,7 @@
                     <a href="contact.php">Contact</a>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-3 col-6 footer_section">
                     <h6>PRODUCTS</h6>
                     <a href="Products.php">TMT Bars</a>
                     <a href="Products.php">Structural Steel</a>
@@ -773,15 +778,15 @@
                     <a href="Products.php">Roofing Sheets</a>
                 </div>
 
-                <div class="col-md-2">
+                <!-- <div class="col-md-2 col-4 footer_section">
                     <h6>VENDORS</h6>
                     <a href="Vendors.php">JSW Steel</a>
                     <a href="Vendors.php">Tata Steel</a>
                     <a href="Vendors.php">Vizag Steel</a>
                     <a href="Vendors.php">BondX</a>
-                </div>
+                </div> -->
 
-                <div class="col-md-3">
+                <div class="col-md-3  footer_section">
                     <h6>CONTACT US</h6>
                     <p>📞 +91 90534 55789</p>
                     <p>✉ info@rajamundrysteels.com</p>

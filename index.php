@@ -97,6 +97,15 @@
             margin-top: 5px;
         }
 
+        @media (min-width:992px) and (max-width:1200px) {
+            .nav-link {
+                font-size: 10px !important;
+               
+                margin: 0 9px !important;
+
+            }
+        }
+
         .nav-link {
             color: #fff !important;
             font-size: 13px;
@@ -374,27 +383,27 @@
             .stat h2 {
                 font-size: 35px;
             }
-}
+        }
 
-            @media(max-width:576px) {
-                .hero {
-                    min-height: auto;
-                    padding: 80px 0
-                }
-
-                .hero h1 {
-                    font-size: 39px
-                }
-
-                .features {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-
-                .brand-box {
-                    font-size: 20px;
-                    margin: 15px 0
-                }
+        @media(max-width:576px) {
+            .hero {
+                min-height: auto;
+                padding: 80px 0
             }
+
+            .hero h1 {
+                font-size: 39px
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .brand-box {
+                font-size: 20px;
+                margin: 15px 0
+            }
+        }
     </style>
 </head>
 

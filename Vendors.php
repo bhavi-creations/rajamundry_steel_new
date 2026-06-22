@@ -956,7 +956,7 @@
   <footer class="footer">
     <div class="container-fluid px-lg-5">
       <div class="row g-4">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
           <div class="logo-wrap mb-3">
             <!-- <div class="logo-mark">R</div>
             <div>RAJAMUNDRY<br><span>STEELS</span></div> -->
@@ -991,7 +991,7 @@
           <a href="Products.php">Roofing Sheets</a>
         </div>
 
-        <div class="col-lg-2 col-4 footer-col">
+        <div class="col-lg-2 col-4 footer-col d-none">
           <h6>VENDORS</h6>
           <a href="Vendors.php">JSW Steel</a>
           <a href="Vendors.php">Tata Steel</a>
@@ -999,7 +999,7 @@
           <a href="Vendors.php">BondX</a>
         </div>
 
-        <div class="col-lg-2 col-8 footer-col">
+        <div class="col-lg-2 col-md-6 footer-col">
           <h6>CONTACT US</h6>
           <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
           <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

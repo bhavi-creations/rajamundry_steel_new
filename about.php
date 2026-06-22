@@ -302,8 +302,12 @@
     }
 
     .time-item {
-      text-align: center;
-      position: relative;
+    
+          text-align: center;
+    border: 2px solid white;
+    padding: 20px;
+    position: relative;
+
     }
 
     .circle {
@@ -604,7 +608,7 @@
  <section class="who-section">
   <div class="container-fluid">
     <div class="row g-0 align-items-stretch">
-      <div class="col-lg-3">
+      <div class="col-lg-3 d-none d-lg-block">
         <div class="who-img"></div>
       </div>
 
@@ -642,6 +646,10 @@
             </div>
           </div>
         </div>
+      </div>
+
+       <div class="col-lg-3 d-block d-lg-none">
+        <div class="who-img"></div>
       </div>
 
       <div class="col-lg-3 d-flex align-items-center justify-content-center p-4">
@@ -910,7 +918,7 @@
   <footer class="footer">
     <div class="container-fluid px-lg-5">
       <div class="row g-4">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="logo-wrap mb-3">
             <!-- <div class="logo-mark">R</div> -->
             <div>
@@ -951,7 +959,7 @@
           <a href="Products.php">Roofing Sheets</a>
         </div>
 
-        <div class="col-lg-2 col-4">
+        <div class="col-lg-2 col-4 d-none">
           <h6>VENDORS</h6>
           <a href="Vendors.php">JSW Steel</a>
           <a href="Vendors.php">Tata Steel</a>
@@ -959,7 +967,7 @@
           <a href="Vendors.php">BondX</a>
         </div>
 
-        <div class="col-lg-2 col-8">
+        <div class="col-lg-4 col-6">
           <h6>CONTACT US</h6>
           <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
           <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

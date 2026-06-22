@@ -964,7 +964,7 @@ $popular_result = $conn->query($popular_sql);
                     <a href="#">Industrial Steel Supply</a>
                 </div>
 
-                <div class="col-lg-2 col-4 col-md-6 footer-col d-block d-lg-none d-xl-block ">
+                <div class="col-lg-2 col-4 col-md-6 footer-col d-block d-lg-none  ">
                     <h6>YARDS</h6>
                     <a href="#">Rajahmundry</a>
                     <a href="#">Vijayawada</a>

@@ -758,7 +758,7 @@
     <footer id="contact">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-3 footer_section">
+                <div class=" col-lg-3 col-md-6  footer_section">
                     <div class="logo mb-3">
                         <!-- <div class="logo-box">R</div> -->
                         <!-- <div>RAJAMUNDRY<br>STEELS</div> -->
@@ -767,7 +767,7 @@
                     <p>Premium steel solutions for construction, industrial and commercial needs.</p>
                 </div>
 
-                <div class="col-md-3 col-5 footer_section">
+                <div class="col-lg-2 col-6 footer_section">
                     <h6>QUICK LINKS</h6>
                     <a href="index.php">Home</a>
                     <a href="about.php">About Us</a>
@@ -778,7 +778,7 @@
                     <a href="contact.php">Contact</a>
                 </div>
 
-                <div class="col-md-3 col-6 footer_section">
+                <div class="col-lg-2 col-6  col-md-6 footer_section">
                     <h6>PRODUCTS</h6>
                     <a href="Products.php">TMT Bars</a>
                     <a href="Products.php">Structural Steel</a>
@@ -795,7 +795,7 @@
                     <a href="Vendors.php">BondX</a>
                 </div> -->
 
-                <div class="col-md-3  footer_section">
+                <div class="col-lg-3 col-6 footer_section">
                     <h6>CONTACT US</h6>
                     <p>📞 +91 90534 55789</p>
                     <p>✉ info@rajamundrysteels.com</p>

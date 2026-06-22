@@ -104,7 +104,7 @@
             background: linear-gradient(135deg, #f5d989, #c48a34);
             color: #111;
             border: 0;
-            padding: 15px 30px;
+            padding: 15px 15px;
             border-radius: 4px;
             font-weight: 800;
             font-size: 13px;
@@ -628,7 +628,8 @@
             <div class="collapse navbar-collapse" id="mainMenu">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li><a class="nav-link active" href="index.php">HOME</a></li>
-                    <li><a class="nav-link" href="about.php">ABOUT US</a></li>
+                    <li><a class="nav-link d-none d-lg-block d-xl-none" href="about.php">ABOUT </a></li>
+                    <li><a class="nav-link d-block d-lg-none d-xl-block" href="about.php">ABOUT US</a></li>
                     <li><a class="nav-link" href="blogs.php">BLOGS</a></li>
                     <li><a class="nav-link" href="Products.php">PRODUCTS</a></li>
                     <li><a class="nav-link" href="Vendors.php">VENDORS</a></li>

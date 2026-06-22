@@ -471,8 +471,8 @@
             }
 
             .footer-col {
-                border-left: 2;
-                padding-left: 7px;
+                border-left: 0;
+                padding-left: 0
             }
         }
 
@@ -680,6 +680,12 @@
                 line-height: 1.4;
             }
 
+
+
+
+
+
+
             .benefits {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -710,159 +716,6 @@
                 margin: 0;
             }
         }
-
-        /* quote page tab response for quick response and other icon cards*/
-        @media (min-width:768px) and (max-width:991px){
-
-    .benefits{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:30px 40px;
-        padding:20px 30px;
-    }
-
-    .benefit{
-        display:flex;
-        align-items:flex-start;
-        gap:18px;
-        min-height:90px;
-    }
-
-    .benefit i{
-        font-size:36px;
-        min-width:40px;
-    }
-
-    .benefit h6{
-        margin-bottom:8px;
-        font-size:18px;
-        font-weight:700;
-    }
-
-    .benefit p{
-        margin:0;
-        line-height:1.7;
-        font-size:15px;
-    }
-
-}
-
-/* Get a quote page 992x1200px desktop view Request a quote form & icons change  */
-@media (min-width:992px) and (max-width:1200px){
-
-    .hero-content,
-    .quote-hero-content,
-    .quote-section-content{
-        align-items: flex-start;
-    }
-
-    .request-form,
-    .quote-form-box{
-        margin-bottom: 20px;
-        transform: scale(0.92);
-        transform-origin: top center;
-    }
-
-    .benefits{
-        margin-top: 25px;
-        position: relative;
-        z-index: 5;
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:20px 30px;
-    }
-    .benefit{
-        display:flex;
-        align-items:center;
-        gap:15px;
-        min-height:70px;
-    }
-
-    .benefit i{
-        font-size:32px;
-        flex-shrink:0;
-    }
-
-    .benefit h6{
-        margin-bottom:4px;
-        font-size:14px;
-    }
-
-    .benefit p{
-        font-size:13px;
-        margin:5;
-        line-height:1.5;
-    }
-
-    .btn-gold{
-        padding:12px 18px;
-        font-size:11px;
-        min-width:120px;
-    }
-
-
-     .navbar-nav{
-        gap:8px;
-    }
-
-    .nav-link{
-        white-space:nowrap;
-        font-size:11px;
-        padding:10px 4px !important;
-    }
-
-
-    .quote-card{
-        padding: 25px 30px;
-    }
-
-    .quote-card textarea{
-        height: 90px;
-    }
-
-    .quote-card input,
-    .quote-card select{
-        padding: 10px 12px;
-    }
-
-}
-/* quote-card form size reduced for 992-1200 px response view  */
-@media (min-width: 992px) and (max-width: 1200px) {
-
-    /* 1. Reduce quote box size */
-    .quote-card {
-        padding: 25px 25px !important;
-        transform: scale(0.92);
-        transform-origin: top center;
-    }
-
-    /* 2. Prevent overlap with icon section */
-    .benefits {
-        margin-top: 20px !important;
-    }
-
-    .benefit {
-        padding: 12px 10px !important;
-        gap: 10px;
-    }
-
-    .benefit i {
-        font-size: 20px !important;
-    }
-
-    .benefit h6 {
-        font-size: 12px !important;
-    }
-
-    .benefit p {
-        font-size: 11px !important;
-        line-height: 1.4;
-    }
-
-}
-
-
-
     </style>
 </head>
 
@@ -1091,7 +944,7 @@
     <footer class="footer">
         <div class="container-fluid px-lg-5">
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-lg-3">
                     <div class="logo-wrap mb-3">
                         <!-- <div class="logo-mark">R</div>
                         <div>RAJAMUNDRY<br><span>STEELS</span></div> -->
@@ -1106,7 +959,7 @@
                     </div>
                 </div>
 
-               <div class="col-md-6 col-lg-2 offset-lg-1 footer-col">
+                <div class="col-lg-2 offset-lg-1 footer-col">
                     <h6>QUICK LINKS</h6>
                     <a href="index.php">Home</a>
                     <a href="about.php">About Us</a>
@@ -1117,7 +970,7 @@
                     <a href="contact.php">Contact</a>
                 </div>
 
-                <div class="col-md-6 col-lg-2 offset-lg-1 footer-col">
+                <div class="col-lg-2 footer-col">
                     <h6>PRODUCTS</h6>
                     <a href="Products.php">TMT Bars</a>
                     <a href="Products.php">Structural Steel</a>
@@ -1126,7 +979,7 @@
                     <a href="Products.php">Roofing Sheets</a>
                 </div>
 
-                <div class="col-md-6 col-lg-2 offset-lg-1 footer-col">
+                <div class="col-lg-2 footer-col">
                     <h6>VENDORS</h6>
                     <a href="Vendors.php">JSW Steel</a>
                     <a href="Vendors.php">Tata Steel</a>
@@ -1134,7 +987,7 @@
                     <a href="Vendors.php">BondX</a>
                 </div>
 
-                <div class="col-md-6 col-lg-2 offset-lg-1 footer-col">
+                <div class="col-lg-2 footer-col">
                     <h6>CONTACT US</h6>
                     <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
                     <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

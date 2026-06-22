@@ -109,10 +109,10 @@
       background: linear-gradient(135deg, #f5d989, #c48a34);
       color: #111;
       border: 0;
-      padding: 2px 33px;
+      padding: 15px 30px;
       border-radius: 4px;
       font-weight: 800;
-      font-size: 11px;
+      font-size: 13px;
     }
 
     .btn-outline-gold {
@@ -748,120 +748,6 @@
 .contact_section_btn:hover{
     opacity:0.9;
 }
-
-
-/* =========================
-   TABLET FIX for hero content and icons alignment(992px - 1200px)
-========================= */
-@media (min-width: 992px) and (max-width: 1200px) {
-
-  /* HERO spacing improvement */
-  .contact-hero {
-    padding: 70px 30px;
-    text-align: center;
-  }
-
-  .contact-hero h1 {
-    font-size: 42px;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  }
-
-  /* HERO FEATURES spacing fix */
-  .hero-features {
-    flex-wrap: wrap;
-  gap: 18px;
-  justify-content: center;
-  }
-
-  .feature-box {
-    width: 42%;
-  border-right: none;
-  padding: 14px 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-
-  /* =========================
-     FORM FIX (MAIN ISSUE)
-  ========================= */
-
-  .contact-main {
-    grid-template-columns: 42% 58%;
-    gap: 20px;
-  }
-
-  .form-side {
-    padding: 45px 30px;
-  }
-
-  .form-side h2 {
-    font-size: 28px;
-  }
-
-  /* prevent form overflow on icons */
-  .info-layout {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  /* INFO CARD spacing */
-  .info-card {
-    padding: 16px;
-  }
-
-  /* QUOTE BOX FIX */
-  .quote-side-card {
-    margin-top: 20px;
-  }
-
-  .quote-img {
-    height: 170px;
-  }
-
-  /* LOCATION section spacing */
-  .location-wrap {
-    grid-template-columns: 30% 70%;
-    gap: 12px;
-  }
-
-  /* CTA FIX */
-  .cta-inner {
-    gap: 20px;
-  }
-
-  .cta-strip h3 {
-    font-size: 22px;
-  }
-}
-
-/* Navbar buttons for tab response */
-@media (min-width: 992px) and (max-width: 1200px) {
-
-    .navbar .navbar-nav {
-        gap: 6px;              /* reduces link spacing */
-        align-items: center;
-    }
-
-    .navbar .nav-link {
-        font-size: 12px;       /* slightly smaller text */
-        padding: 10px 6px;     /* tighter spacing */
-    }
-
-    .navbar .btn-gold {
-        padding: 10px 16px;   /* reduce button size */
-        font-size: 12px;
-        margin-left: 10px;    /* space from links */
-        white-space: nowrap;  /* prevents breaking */
-    }
-
-    .navbar .navbar-collapse {
-        justify-content: flex-end;
-    }
-}
-
 
 
 

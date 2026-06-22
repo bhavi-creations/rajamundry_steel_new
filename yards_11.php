@@ -620,8 +620,8 @@
             }
 
             .hero-stats {
-                margin-top: 25px;
-                padding: 0 15px;
+                margin-top: -80px;
+                padding: 0 22px 20px;
             }
 
             .stats-box {
@@ -662,8 +662,6 @@
             .yard-grid {
                 grid-template-columns: 1fr;
                 display: grid;
-                width:100%;
-                border-radius:0;
             }
 
             .hero-feature {
@@ -717,12 +715,6 @@
                 line-height: 1.4;
                 margin: 0;
             }
-        }
-        /*Yards page desktop/laptop response view   */
-      @media(min-width:992px) and (max-width:1200px) {
-         .hero-stats{
-           margin-top:50px !important;
-           }
         }
     </style>
 </head>
@@ -986,7 +978,7 @@
     <footer class="footer">
         <div class="container-fluid px-lg-5">
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3">
                     <div class="logo-wrap mb-3">
                         <!-- <div class="logo-mark">R</div>/ -->
                         <div>
@@ -1013,7 +1005,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-6 col-md-6 offset-lg-1 footer-col">
+                <div class="col-lg-2 col-6 offset-lg-1 footer-col">
                     <h6>QUICK LINKS</h6>
                     <a href="index.php">Home</a>
                     <a href="about.php">About Us</a>
@@ -1024,7 +1016,7 @@
                     <a href="contact.php">Contact</a>
                 </div>
 
-                <div class="col-lg-2 col-6  col-md-6 footer-col">
+                <div class="col-lg-2 col-6 footer-col">
                     <h6>PRODUCTS</h6>
                     <a href="Products.php">TMT Bars</a>
                     <a href="Products.php">Structural Steel</a>
@@ -1033,15 +1025,15 @@
                     <a href="Products.php">Roofing Sheets</a>
                 </div>
 
-                <!-- <div class="col-lg-2 col-4 footer-col">
+                <div class="col-lg-2 col-4 footer-col">
                     <h6>VENDORS</h6>
                     <a href="Vendors.php">JSW Steel</a>
                     <a href="Vendors.php">Tata Steel</a>
                     <a href="Vendors.php">Vizag Steel</a>
                     <a href="Vendors.php">BondX</a>
-                </div> -->
+                </div>
 
-                <div class="col-lg-4 col-12 col-md-6 footer-col">
+                <div class="col-lg-2 col-8 footer-col">
                     <h6>CONTACT US</h6>
                     <p><i class="fa-solid fa-phone text-warning me-2"></i> +91 96522 39999</p>
                     <p><i class="fa-solid fa-envelope text-warning me-2"></i> info@rajamundrysteels.com</p>

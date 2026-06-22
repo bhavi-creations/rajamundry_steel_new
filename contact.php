@@ -758,7 +758,7 @@
   /* HERO spacing improvement */
   .contact-hero {
     padding: 70px 30px;
-    text-align: center;
+    text-align: left;
   }
 
   .contact-hero h1 {
